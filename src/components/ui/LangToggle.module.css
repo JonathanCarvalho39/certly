@@ -1,0 +1,22 @@
+.wrap {
+  display: flex;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.btn {
+  padding: 0.3rem 0.55rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  background: var(--surface);
+  color: var(--text-dim);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn.active {
+  background: var(--amber);
+  color: #000;
+}

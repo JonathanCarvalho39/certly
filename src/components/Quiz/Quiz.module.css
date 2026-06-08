@@ -1,0 +1,361 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.exitBtn {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: var(--radius-sm);
+  background: none;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.exitBtn:hover {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+.counter {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.progressWrap {
+  flex: 1;
+}
+
+.timerToggle {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--radius-sm);
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.timerToggle:hover {
+  border-color: var(--amber);
+  color: var(--text);
+}
+
+.langToggle {
+  display: flex;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.langBtn {
+  padding: 0.3rem 0.55rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  background: var(--surface);
+  color: var(--text-dim);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.langBtn.active {
+  background: var(--amber);
+  color: #000;
+}
+
+.body {
+  flex: 1;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.optionsWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+}
+
+.footerInner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.footerInner > button {
+  margin-left: auto;
+}
+
+.footerLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footerRight {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navBtn {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.navBtn:hover {
+  border-color: var(--amber);
+  color: var(--text);
+}
+
+.navBtn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.confirmBtn {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--blue);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.confirmBtn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.confirmBtn:not(:disabled):hover {
+  background: #2563eb;
+}
+
+.finishBtn {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--red);
+  background: none;
+  color: var(--red);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.finishBtn:hover {
+  background: var(--red-dim);
+}
+
+.examRow1 {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.examRow1 .navBtn {
+  flex: 1;
+  min-width: 0;
+}
+
+.navBtnFull {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.2s;
+  width: auto;
+}
+
+.navBtnFull:hover {
+  border-color: var(--amber);
+  color: var(--text);
+}
+
+.finishBtnFull {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--red);
+  background: none;
+  color: var(--red);
+  cursor: pointer;
+  transition: all 0.2s;
+  width: auto;
+}
+
+.finishBtnFull:hover {
+  background: var(--red-dim);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  animation: fadeUp 0.2s ease;
+  padding: 1rem;
+}
+
+.modal {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.modalTitle {
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.modalText {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+.modalActions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.modalCancel {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface2);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.modalCancel:hover {
+  border-color: var(--amber);
+  color: var(--text);
+}
+
+.modalConfirm {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: var(--red);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.modalConfirm:hover {
+  background: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .progressWrap {
+    order: 10;
+    width: 100%;
+    flex: unset;
+  }
+
+  .footerInner {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .examRow1 .navBtn,
+  .navBtnFull,
+  .finishBtnFull {
+    font-size: 0.7rem;
+    padding: 0.6rem 0.5rem;
+  }
+
+  .navBtnFull,
+  .finishBtnFull {
+    width: 100%;
+  }
+
+  .body {
+    padding-bottom: 12rem;
+  }
+}

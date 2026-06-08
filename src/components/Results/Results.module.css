@@ -1,0 +1,121 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  gap: 1.5rem;
+  animation: fadeUp 0.4s ease;
+}
+
+.topBar {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 110;
+}
+
+.title {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.banner {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.03em;
+}
+
+.passed {
+  background: var(--green-dim);
+  color: var(--green);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.failed {
+  background: var(--red-dim);
+  color: var(--red);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.answered {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+.stats {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.statValue {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.wrongVal {
+  color: var(--red);
+}
+
+.skippedVal {
+  color: var(--text-mut);
+}
+
+.statLabel {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.homeBtn,
+.retryBtn {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.homeBtn:hover,
+.retryBtn:hover {
+  border-color: var(--amber);
+  color: var(--text);
+}
+
+.retryBtn {
+  background: var(--amber);
+  color: #000;
+  border-color: var(--amber);
+}
+
+.retryBtn:hover {
+  background: #d97706;
+}

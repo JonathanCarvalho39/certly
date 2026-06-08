@@ -1,0 +1,19 @@
+.timer {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  min-width: 75px;
+  text-align: center;
+}
+
+.timer.low {
+  color: var(--red);
+  border-color: rgba(239, 68, 68, 0.4);
+  background: var(--red-dim);
+  animation: pulse 1s ease-in-out infinite;
+}

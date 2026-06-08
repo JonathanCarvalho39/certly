@@ -54,6 +54,7 @@ function appReducer(state: AppState, action: AppAction): AppState {
           [action.payload.index]: {
             selected: action.payload.selected,
             confirmed: false,
+            reviewed: state.answers[action.payload.index]?.reviewed ?? false,
           },
         },
       };

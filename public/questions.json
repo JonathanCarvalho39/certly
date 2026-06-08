@@ -1,5 +1,5 @@
 [
-   {
+  {
     "id": "DVA-C02-001",
     "question": {
       "en": "Which of the following are good use cases for how Amazon ElastiCache can help an application? (Select TWO)",
@@ -29,13 +29,13 @@
     "explanation": {
       "en": {
         "correct": {
-          "C": "Correct. Amazon ElastiCache é um cache em memória usado para reduzir latência, aumentar throughput de leituras repetidas e armazenar resultados ou dados frequentemente acessados. Option C: Improve latency and throughput for read-heavy application workloads. Correct answer(s): C, E.",
-          "E": "Correct. Amazon ElastiCache é um cache em memória usado para reduzir latência, aumentar throughput de leituras repetidas e armazenar resultados ou dados frequentemente acessados. Option E: Improve performance of compute-intensive applications. Correct answer(s): C, E."
+          "C": "Correct. Amazon ElastiCache is an in-memory cache used to reduce latency, increase throughput for repeated reads, and store frequently accessed results or data. Option C: Improve latency and throughput for read-heavy application workloads. Correct answer(s): C, E.",
+          "E": "Correct. Amazon ElastiCache is an in-memory cache used to reduce latency, increase throughput for repeated reads, and store frequently accessed results or data. Option E: Improve performance of compute-intensive applications. Correct answer(s): C, E."
         },
         "wrong": {
-          "A": "Incorrect. Amazon ElastiCache é um cache em memória usado para reduzir latência, aumentar throughput de leituras repetidas e armazenar resultados ou dados frequentemente acessados. Option A: Improve the performance of S3 PUT operations. Correct answer(s): C, E.",
-          "B": "Incorrect. Amazon ElastiCache é um cache em memória usado para reduzir latência, aumentar throughput de leituras repetidas e armazenar resultados ou dados frequentemente acessados. Option B: Improve the latency of deployments performed by AWS CodeDeploy. Correct answer(s): C, E.",
-          "D": "Incorrect. Amazon ElastiCache é um cache em memória usado para reduzir latência, aumentar throughput de leituras repetidas e armazenar resultados ou dados frequentemente acessados. Option D: Reduce the time required to merge AWS CodeCommit branches. Correct answer(s): C, E."
+          "A": "Incorrect. Amazon ElastiCache is an in-memory cache used to reduce latency, increase throughput for repeated reads, and store frequently accessed results or data. Option A: Improve the performance of S3 PUT operations. Correct answer(s): C, E.",
+          "B": "Incorrect. Amazon ElastiCache is an in-memory cache used to reduce latency, increase throughput for repeated reads, and store frequently accessed results or data. Option B: Improve the latency of deployments performed by AWS CodeDeploy. Correct answer(s): C, E.",
+          "D": "Incorrect. Amazon ElastiCache is an in-memory cache used to reduce latency, increase throughput for repeated reads, and store frequently accessed results or data. Option D: Reduce the time required to merge AWS CodeCommit branches. Correct answer(s): C, E."
         }
       },
       "pt": {
@@ -82,13 +82,13 @@
     "explanation": {
       "en": {
         "correct": {
-          "A": "Correct. Serviços key/value armazenam dados acessados por uma chave. No contexto da questão, ElastiCache, DynamoDB e S3 podem ser usados com esse padrão de acesso. Option A: Amazon ElastiCache. Correct answer(s): A, C, E.",
-          "C": "Correct. Serviços key/value armazenam dados acessados por uma chave. No contexto da questão, ElastiCache, DynamoDB e S3 podem ser usados com esse padrão de acesso. Option C: DynamoDB. Correct answer(s): A, C, E.",
-          "E": "Correct. Serviços key/value armazenam dados acessados por uma chave. No contexto da questão, ElastiCache, DynamoDB e S3 podem ser usados com esse padrão de acesso. Option E: Simple Storage Service. Correct answer(s): A, C, E."
+          "A": "Correct. Key/value stores store data accessed by a key. In the context of this question, ElastiCache, DynamoDB, and S3 can all be used with this access pattern. Option A: Amazon ElastiCache. Correct answer(s): A, C, E.",
+          "C": "Correct. Key/value stores store data accessed by a key. In the context of this question, ElastiCache, DynamoDB, and S3 can all be used with this access pattern. Option C: DynamoDB. Correct answer(s): A, C, E.",
+          "E": "Correct. Key/value stores store data accessed by a key. In the context of this question, ElastiCache, DynamoDB, and S3 can all be used with this access pattern. Option E: Simple Storage Service. Correct answer(s): A, C, E."
         },
         "wrong": {
-          "B": "Incorrect. Serviços key/value armazenam dados acessados por uma chave. No contexto da questão, ElastiCache, DynamoDB e S3 podem ser usados com esse padrão de acesso. Option B: Simple Notification Service. Correct answer(s): A, C, E.",
-          "D": "Incorrect. Serviços key/value armazenam dados acessados por uma chave. No contexto da questão, ElastiCache, DynamoDB e S3 podem ser usados com esse padrão de acesso. Option D: Simple Workflow Service. Correct answer(s): A, C, E."
+          "B": "Incorrect. Key/value stores store data accessed by a key. In the context of this question, ElastiCache, DynamoDB, and S3 can all be used with this access pattern. Option B: Simple Notification Service. Correct answer(s): A, C, E.",
+          "D": "Incorrect. Key/value stores store data accessed by a key. In the context of this question, ElastiCache, DynamoDB, and S3 can all be used with this access pattern. Option D: Simple Workflow Service. Correct answer(s): A, C, E."
         }
       },
       "pt": {
@@ -131,12 +131,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "D": "Correct. Quando Lambda é target de um ALB, o ALB precisa estar configurado para encaminhar multi-value headers no evento entregue à função. Option D: Enable the multi-value headers on the ALB. Correct answer(s): D."
+          "D": "Correct. When Lambda is a target of an ALB, the ALB must be configured to forward multi-value headers in the event delivered to the function. Option D: Enable the multi-value headers on the ALB. Correct answer(s): D."
         },
         "wrong": {
-          "A": "Incorrect. Quando Lambda é target de um ALB, o ALB precisa estar configurado para encaminhar multi-value headers no evento entregue à função. Option A: Place the Lambda function and target group in the same account. Correct answer(s): D.",
-          "B": "Incorrect. Quando Lambda é target de um ALB, o ALB precisa estar configurado para encaminhar multi-value headers no evento entregue à função. Option B: Send the request body to the Lambda function with a size less than 1 MB 0. Correct answer(s): D.",
-          "C": "Incorrect. Quando Lambda é target de um ALB, o ALB precisa estar configurado para encaminhar multi-value headers no evento entregue à função. Option C: Include the Base64 encoding status status code, status description, and headers in the Lambda function. Correct answer(s): D."
+          "A": "Incorrect. When Lambda is a target of an ALB, the ALB must be configured to forward multi-value headers in the event delivered to the function. Option A: Place the Lambda function and target group in the same account. Correct answer(s): D.",
+          "B": "Incorrect. When Lambda is a target of an ALB, the ALB must be configured to forward multi-value headers in the event delivered to the function. Option B: Send the request body to the Lambda function with a size less than 1 MB 0. Correct answer(s): D.",
+          "C": "Incorrect. When Lambda is a target of an ALB, the ALB must be configured to forward multi-value headers in the event delivered to the function. Option C: Include the Base64 encoding status status code, status description, and headers in the Lambda function. Correct answer(s): D."
         }
       },
       "pt": {
@@ -178,12 +178,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "D": "Correct. Em padrões de cache, escrever primeiro no backend preserva a fonte de verdade; invalidar o cache evita servir dados antigos quando há exigência de consistência forte. Option D: Write to the backend first and invalidate the cache. Correct answer(s): D."
+          "D": "Correct. In cache patterns, writing to the backend first preserves the source of truth; invalidating the cache prevents serving stale data when strong consistency is required. Option D: Write to the backend first and invalidate the cache. Correct answer(s): D."
         },
         "wrong": {
-          "A": "Incorrect. Em padrões de cache, escrever primeiro no backend preserva a fonte de verdade; invalidar o cache evita servir dados antigos quando há exigência de consistência forte. Option A: Write to the cache directly and sync the backend at a later time. Correct answer(s): D.",
-          "B": "Incorrect. Em padrões de cache, escrever primeiro no backend preserva a fonte de verdade; invalidar o cache evita servir dados antigos quando há exigência de consistência forte. Option B: Write to the backend first and wait for the cache to expire. Correct answer(s): D.",
-          "C": "Incorrect. Em padrões de cache, escrever primeiro no backend preserva a fonte de verdade; invalidar o cache evita servir dados antigos quando há exigência de consistência forte. Option C: Write to the cache and the backend at the same time. Correct answer(s): D."
+          "A": "Incorrect. In cache patterns, writing to the backend first preserves the source of truth; invalidating the cache prevents serving stale data when strong consistency is required. Option A: Write to the cache directly and sync the backend at a later time. Correct answer(s): D.",
+          "B": "Incorrect. In cache patterns, writing to the backend first preserves the source of truth; invalidating the cache prevents serving stale data when strong consistency is required. Option B: Write to the backend first and wait for the cache to expire. Correct answer(s): D.",
+          "C": "Incorrect. In cache patterns, writing to the backend first preserves the source of truth; invalidating the cache prevents serving stale data when strong consistency is required. Option C: Write to the cache and the backend at the same time. Correct answer(s): D."
         }
       },
       "pt": {
@@ -228,13 +228,13 @@
     "explanation": {
       "en": {
         "correct": {
-          "B": "Correct. Criptografia em trânsito protege dados durante a transferência. SSL/TLS atende diretamente a esse requisito; client-side encryption também criptografa antes do envio. Option B: Set up Client-Side Encryption with an AWS KMS-Managed Customer Master Key. Correct answer(s): B, D.",
-          "D": "Correct. Criptografia em trânsito protege dados durante a transferência. SSL/TLS atende diretamente a esse requisito; client-side encryption também criptografa antes do envio. Option D: Transfer the data over an SSL connection. Correct answer(s): B, D."
+          "B": "Correct. Encryption in transit protects data during transfer. SSL/TLS directly meets this requirement; client-side encryption also encrypts before sending. Option B: Set up Client-Side Encryption with an AWS KMS-Managed Customer Master Key. Correct answer(s): B, D.",
+          "D": "Correct. Encryption in transit protects data during transfer. SSL/TLS directly meets this requirement; client-side encryption also encrypts before sending. Option D: Transfer the data over an SSL connection. Correct answer(s): B, D."
         },
         "wrong": {
-          "A": "Incorrect. Criptografia em trânsito protege dados durante a transferência. SSL/TLS atende diretamente a esse requisito; client-side encryption também criptografa antes do envio. Option A: Set up hardware VPN tunnels to a VPC and access S3 through a VPC endpoint. Correct answer(s): B, D.",
-          "C": "Incorrect. Criptografia em trânsito protege dados durante a transferência. SSL/TLS atende diretamente a esse requisito; client-side encryption também criptografa antes do envio. Option C: Set up Server-Side Encryption with AWS KMS-Managed Keys. Correct answer(s): B, D.",
-          "E": "Incorrect. Criptografia em trânsito protege dados durante a transferência. SSL/TLS atende diretamente a esse requisito; client-side encryption também criptografa antes do envio. Option E: Set up Server-Side Encryption with S3-Managed Keys. Correct answer(s): B, D."
+          "A": "Incorrect. Encryption in transit protects data during transfer. SSL/TLS directly meets this requirement; client-side encryption also encrypts before sending. Option A: Set up hardware VPN tunnels to a VPC and access S3 through a VPC endpoint. Correct answer(s): B, D.",
+          "C": "Incorrect. Encryption in transit protects data during transfer. SSL/TLS directly meets this requirement; client-side encryption also encrypts before sending. Option C: Set up Server-Side Encryption with AWS KMS-Managed Keys. Correct answer(s): B, D.",
+          "E": "Incorrect. Encryption in transit protects data during transfer. SSL/TLS directly meets this requirement; client-side encryption also encrypts before sending. Option E: Set up Server-Side Encryption with S3-Managed Keys. Correct answer(s): B, D."
         }
       },
       "pt": {
@@ -277,12 +277,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "B": "Correct. SSE-KMS criptografa objetos no S3 usando AWS KMS e permite auditoria de uso da chave via CloudTrail, sem exigir criptografia manual na aplicação. Option B: Server-side encryption with AWS KMS-managed keys. Correct answer(s): B."
+          "B": "Correct. SSE-KMS encrypts objects in S3 using AWS KMS and allows key usage auditing via CloudTrail, without requiring manual encryption in the application. Option B: Server-side encryption with AWS KMS-managed keys. Correct answer(s): B."
         },
         "wrong": {
-          "A": "Incorrect. SSE-KMS criptografa objetos no S3 usando AWS KMS e permite auditoria de uso da chave via CloudTrail, sem exigir criptografia manual na aplicação. Option A: Server-side encryption using S3-managed keys. Correct answer(s): B.",
-          "C": "Incorrect. SSE-KMS criptografa objetos no S3 usando AWS KMS e permite auditoria de uso da chave via CloudTrail, sem exigir criptografia manual na aplicação. Option C: Client-side encryption with a client-side symmetric master key. Correct answer(s): B.",
-          "D": "Incorrect. SSE-KMS criptografa objetos no S3 usando AWS KMS e permite auditoria de uso da chave via CloudTrail, sem exigir criptografia manual na aplicação. Option D: Client-side encryption with AWS KMS-managed keys. Correct answer(s): B."
+          "A": "Incorrect. SSE-KMS encrypts objects in S3 using AWS KMS and allows key usage auditing via CloudTrail, without requiring manual encryption in the application. Option A: Server-side encryption using S3-managed keys. Correct answer(s): B.",
+          "C": "Incorrect. SSE-KMS encrypts objects in S3 using AWS KMS and allows key usage auditing via CloudTrail, without requiring manual encryption in the application. Option C: Client-side encryption with a client-side symmetric master key. Correct answer(s): B.",
+          "D": "Incorrect. SSE-KMS encrypts objects in S3 using AWS KMS and allows key usage auditing via CloudTrail, without requiring manual encryption in the application. Option D: Client-side encryption with AWS KMS-managed keys. Correct answer(s): B."
         }
       },
       "pt": {
@@ -324,12 +324,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "A": "Correct. Acesso cross-account seguro deve usar IAM roles assumidas temporariamente, evitando credenciais estáticas e mantendo menor privilégio em cada conta auditada. Option A: Configure cross-account roles in each audited account. Write code in Account A that assumes those roles. Correct answer(s): A."
+          "A": "Correct. Secure cross-account access should use IAM roles assumed temporarily, avoiding static credentials and maintaining least privilege in each audited account. Option A: Configure cross-account roles in each audited account. Write code in Account A that assumes those roles. Correct answer(s): A."
         },
         "wrong": {
-          "B": "Incorrect. Acesso cross-account seguro deve usar IAM roles assumidas temporariamente, evitando credenciais estáticas e mantendo menor privilégio em cada conta auditada. Option B: Use S3 cross-region replication to communicate among accounts, with Amazon S3 event notifications to trigger Lambda functions. Correct answer(s): A.",
-          "C": "Incorrect. Acesso cross-account seguro deve usar IAM roles assumidas temporariamente, evitando credenciais estáticas e mantendo menor privilégio em cada conta auditada. Option C: Deploy an application in each audited account with its own role. Have Account A authenticate with the application. Correct answer(s): A.",
-          "D": "Incorrect. Acesso cross-account seguro deve usar IAM roles assumidas temporariamente, evitando credenciais estáticas e mantendo menor privilégio em cada conta auditada. Option D: Create an IAM user with an access key in each audited account. Write code in Account A that uses those access keys. Correct answer(s): A."
+          "B": "Incorrect. Secure cross-account access should use IAM roles assumed temporarily, avoiding static credentials and maintaining least privilege in each audited account. Option B: Use S3 cross-region replication to communicate among accounts, with Amazon S3 event notifications to trigger Lambda functions. Correct answer(s): A.",
+          "C": "Incorrect. Secure cross-account access should use IAM roles assumed temporarily, avoiding static credentials and maintaining least privilege in each audited account. Option C: Deploy an application in each audited account with its own role. Have Account A authenticate with the application. Correct answer(s): A.",
+          "D": "Incorrect. Secure cross-account access should use IAM roles assumed temporarily, avoiding static credentials and maintaining least privilege in each audited account. Option D: Create an IAM user with an access key in each audited account. Write code in Account A that uses those access keys. Correct answer(s): A."
         }
       },
       "pt": {
@@ -371,12 +371,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "B": "Correct. AWS CodeDeploy implanta bundles armazenados no S3 ou GitHub em instâncias EC2; armazenamento local on-premises não é fonte direta de deployment para CodeDeploy. Option B: Upload the bundle to an Amazon S3 bucket and specify the S3 location when doing a deployment using AWS CodeDeploy. Correct answer(s): B."
+          "B": "Correct. AWS CodeDeploy deploys bundles stored in S3 or GitHub to EC2 instances; local on-premises storage is not a direct deployment source for CodeDeploy. Option B: Upload the bundle to an Amazon S3 bucket and specify the S3 location when doing a deployment using AWS CodeDeploy. Correct answer(s): B."
         },
         "wrong": {
-          "A": "Incorrect. AWS CodeDeploy implanta bundles armazenados no S3 ou GitHub em instâncias EC2; armazenamento local on-premises não é fonte direta de deployment para CodeDeploy. Option A: Use AWS CodeDeploy and point it to the local storage to directly deploy a bundle m a zip. tar. or tar.gz format. Correct answer(s): B.",
-          "C": "Incorrect. AWS CodeDeploy implanta bundles armazenados no S3 ou GitHub em instâncias EC2; armazenamento local on-premises não é fonte direta de deployment para CodeDeploy. Option C: Create a repository using AWS CodeCommit to automatically trigger a deployment to the EC2 instances. Correct answer(s): B.",
-          "D": "Incorrect. AWS CodeDeploy implanta bundles armazenados no S3 ou GitHub em instâncias EC2; armazenamento local on-premises não é fonte direta de deployment para CodeDeploy. Option D: Use AWS CodeBuild to automatically deploy the latest build to the latest EC2 instances. Correct answer(s): B."
+          "A": "Incorrect. AWS CodeDeploy deploys bundles stored in S3 or GitHub to EC2 instances; local on-premises storage is not a direct deployment source for CodeDeploy. Option A: Use AWS CodeDeploy and point it to the local storage to directly deploy a bundle m a zip. tar. or tar.gz format. Correct answer(s): B.",
+          "C": "Incorrect. AWS CodeDeploy deploys bundles stored in S3 or GitHub to EC2 instances; local on-premises storage is not a direct deployment source for CodeDeploy. Option C: Create a repository using AWS CodeCommit to automatically trigger a deployment to the EC2 instances. Correct answer(s): B.",
+          "D": "Incorrect. AWS CodeDeploy deploys bundles stored in S3 or GitHub to EC2 instances; local on-premises storage is not a direct deployment source for CodeDeploy. Option D: Use AWS CodeBuild to automatically deploy the latest build to the latest EC2 instances. Correct answer(s): B."
         }
       },
       "pt": {
@@ -418,12 +418,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "A": "Correct. A criptografia nativa do Amazon EBS protege dados em repouso nos volumes com impacto mínimo, sem exigir criptografia customizada na aplicação. Option A: Configure the Amazon EC2 instance fleet to use encrypted EBS volumes for storing data. Correct answer(s): A."
+          "A": "Correct. Amazon EBS native encryption protects data at rest on volumes with minimal impact, without requiring custom encryption in the application. Option A: Configure the Amazon EC2 instance fleet to use encrypted EBS volumes for storing data. Correct answer(s): A."
         },
         "wrong": {
-          "B": "Incorrect. A criptografia nativa do Amazon EBS protege dados em repouso nos volumes com impacto mínimo, sem exigir criptografia customizada na aplicação. Option B: Add logic to write all data to an encrypted Amazon S3 bucket. Correct answer(s): A.",
-          "C": "Incorrect. A criptografia nativa do Amazon EBS protege dados em repouso nos volumes com impacto mínimo, sem exigir criptografia customizada na aplicação. Option C: Add a custom encryption algorithm to the application that will encrypt and decrypt all data. Correct answer(s): A.",
-          "D": "Incorrect. A criptografia nativa do Amazon EBS protege dados em repouso nos volumes com impacto mínimo, sem exigir criptografia customizada na aplicação. Option D: Create a new Amazon Machine Image (AMI) with an encrypted root volume and store the data to ephemeral disks. Correct answer(s): A."
+          "B": "Incorrect. Amazon EBS native encryption protects data at rest on volumes with minimal impact, without requiring custom encryption in the application. Option B: Add logic to write all data to an encrypted Amazon S3 bucket. Correct answer(s): A.",
+          "C": "Incorrect. Amazon EBS native encryption protects data at rest on volumes with minimal impact, without requiring custom encryption in the application. Option C: Add a custom encryption algorithm to the application that will encrypt and decrypt all data. Correct answer(s): A.",
+          "D": "Incorrect. Amazon EBS native encryption protects data at rest on volumes with minimal impact, without requiring custom encryption in the application. Option D: Create a new Amazon Machine Image (AMI) with an encrypted root volume and store the data to ephemeral disks. Correct answer(s): A."
         }
       },
       "pt": {
@@ -465,12 +465,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "C": "Correct. Amazon CloudFront funciona como CDN, entrega conteúdo a partir de edge locations e reduz carga/latência no acesso a objetos do S3. Option C: Use Amazon CloudFront to serve the content of images stored in Amazon S3. Correct answer(s): C."
+          "C": "Correct. Amazon CloudFront acts as a CDN, delivers content from edge locations, and reduces load/latency when accessing S3 objects. Option C: Use Amazon CloudFront to serve the content of images stored in Amazon S3. Correct answer(s): C."
         },
         "wrong": {
-          "A": "Incorrect. Amazon CloudFront funciona como CDN, entrega conteúdo a partir de edge locations e reduz carga/latência no acesso a objetos do S3. Option A: Create multiple prefix in the S3 bucket to increase the request rate. Correct answer(s): C.",
-          "B": "Incorrect. Amazon CloudFront funciona como CDN, entrega conteúdo a partir de edge locations e reduz carga/latência no acesso a objetos do S3. Option B: Create an Amazon ElastiCache cluster to cache and serve frequently accessed items. Correct answer(s): C.",
-          "D": "Incorrect. Amazon CloudFront funciona como CDN, entrega conteúdo a partir de edge locations e reduz carga/latência no acesso a objetos do S3. Option D: Submit a ticket to AWS support to request a rate limit increase for the S3 bucket. Correct answer(s): C."
+          "A": "Incorrect. Amazon CloudFront acts as a CDN, delivers content from edge locations, and reduces load/latency when accessing S3 objects. Option A: Create multiple prefix in the S3 bucket to increase the request rate. Correct answer(s): C.",
+          "B": "Incorrect. Amazon CloudFront acts as a CDN, delivers content from edge locations, and reduces load/latency when accessing S3 objects. Option B: Create an Amazon ElastiCache cluster to cache and serve frequently accessed items. Correct answer(s): C.",
+          "D": "Incorrect. Amazon CloudFront acts as a CDN, delivers content from edge locations, and reduces load/latency when accessing S3 objects. Option D: Submit a ticket to AWS support to request a rate limit increase for the S3 bucket. Correct answer(s): C."
         }
       },
       "pt": {
@@ -512,12 +512,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "C": "Correct. Para criptografar antes do upload, a função deve usar envelope encryption: chamar `GenerateDataKey` no AWS KMS e usar a data key para criptografar localmente. Option C: Use the `GenerateDataKey` API, then use that data key to encrypt the file in the Lambda function code. Correct answer(s): C."
+          "C": "Correct. To encrypt before upload, the function must use envelope encryption: call `GenerateDataKey` on AWS KMS and use the data key to encrypt locally. Option C: Use the `GenerateDataKey` API, then use that data key to encrypt the file in the Lambda function code. Correct answer(s): C."
         },
         "wrong": {
-          "A": "Incorrect. Para criptografar antes do upload, a função deve usar envelope encryption: chamar `GenerateDataKey` no AWS KMS e usar a data key para criptografar localmente. Option A: Use the default AWS KMS customer master key for S3 in the Lambda function code. Correct answer(s): C.",
-          "B": "Incorrect. Para criptografar antes do upload, a função deve usar envelope encryption: chamar `GenerateDataKey` no AWS KMS e usar a data key para criptografar localmente. Option B: Use the S3 managed key and call the `GenerateDataKey` API to encrypt the file. Correct answer(s): C.",
-          "D": "Incorrect. Para criptografar antes do upload, a função deve usar envelope encryption: chamar `GenerateDataKey` no AWS KMS e usar a data key para criptografar localmente. Option D: Use a custom KMS customer master key created for S3 in the Lambda function code. Correct answer(s): C."
+          "A": "Incorrect. To encrypt before upload, the function must use envelope encryption: call `GenerateDataKey` on AWS KMS and use the data key to encrypt locally. Option A: Use the default AWS KMS customer master key for S3 in the Lambda function code. Correct answer(s): C.",
+          "B": "Incorrect. To encrypt before upload, the function must use envelope encryption: call `GenerateDataKey` on AWS KMS and use the data key to encrypt locally. Option B: Use the S3 managed key and call the `GenerateDataKey` API to encrypt the file. Correct answer(s): C.",
+          "D": "Incorrect. To encrypt before upload, the function must use envelope encryption: call `GenerateDataKey` on AWS KMS and use the data key to encrypt locally. Option D: Use a custom KMS customer master key created for S3 in the Lambda function code. Correct answer(s): C."
         }
       },
       "pt": {
@@ -559,12 +559,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "D": "Correct. CORS controla requisições cross-origin feitas por navegadores. Fontes web em outro bucket/origem exigem configuração CORS adequada no bucket de destino. Option D: Configure the cdfonts bucket to allow cross-origin requests by creating a CORS configuration. Correct answer(s): D."
+          "D": "Correct. CORS controls cross-origin requests made by browsers. Web fonts in another bucket/origin require proper CORS configuration on the destination bucket. Option D: Configure the cdfonts bucket to allow cross-origin requests by creating a CORS configuration. Correct answer(s): D."
         },
         "wrong": {
-          "A": "Incorrect. CORS controla requisições cross-origin feitas por navegadores. Fontes web em outro bucket/origem exigem configuração CORS adequada no bucket de destino. Option A: Enable versioning on the cdfonts bucket for each web font. Correct answer(s): D.",
-          "B": "Incorrect. CORS controla requisições cross-origin feitas por navegadores. Fontes web em outro bucket/origem exigem configuração CORS adequada no bucket de destino. Option B: Create a policy on the cdfonts bucket to enable access to everyone. Correct answer(s): D.",
-          "C": "Incorrect. CORS controla requisições cross-origin feitas por navegadores. Fontes web em outro bucket/origem exigem configuração CORS adequada no bucket de destino. Option C: Add the `Content-MD5` header to the request for webfonts in the cdfonts bucket from the website. Correct answer(s): D."
+          "A": "Incorrect. CORS controls cross-origin requests made by browsers. Web fonts in another bucket/origin require proper CORS configuration on the destination bucket. Option A: Enable versioning on the cdfonts bucket for each web font. Correct answer(s): D.",
+          "B": "Incorrect. CORS controls cross-origin requests made by browsers. Web fonts in another bucket/origin require proper CORS configuration on the destination bucket. Option B: Create a policy on the cdfonts bucket to enable access to everyone. Correct answer(s): D.",
+          "C": "Incorrect. CORS controls cross-origin requests made by browsers. Web fonts in another bucket/origin require proper CORS configuration on the destination bucket. Option C: Add the `Content-MD5` header to the request for webfonts in the cdfonts bucket from the website. Correct answer(s): D."
         }
       },
       "pt": {
@@ -609,13 +609,13 @@
     "explanation": {
       "en": {
         "correct": {
-          "C": "Correct. O fluxo comum do AWS SAM para reimplantar alterações é construir os artefatos com `sam build` e publicar a stack com `sam deploy`. Option C: `sam build`. Correct answer(s): C, D.",
-          "D": "Correct. O fluxo comum do AWS SAM para reimplantar alterações é construir os artefatos com `sam build` e publicar a stack com `sam deploy`. Option D: `sam deploy`. Correct answer(s): C, D."
+          "C": "Correct. The common AWS SAM workflow to redeploy changes is to build the artifacts with `sam build` and publish the stack with `sam deploy`. Option C: `sam build`. Correct answer(s): C, D.",
+          "D": "Correct. The common AWS SAM workflow to redeploy changes is to build the artifacts with `sam build` and publish the stack with `sam deploy`. Option D: `sam deploy`. Correct answer(s): C, D."
         },
         "wrong": {
-          "A": "Incorrect. O fluxo comum do AWS SAM para reimplantar alterações é construir os artefatos com `sam build` e publicar a stack com `sam deploy`. Option A: `sam init`. Correct answer(s): C, D.",
-          "B": "Incorrect. O fluxo comum do AWS SAM para reimplantar alterações é construir os artefatos com `sam build` e publicar a stack com `sam deploy`. Option B: `sam validate`. Correct answer(s): C, D.",
-          "E": "Incorrect. O fluxo comum do AWS SAM para reimplantar alterações é construir os artefatos com `sam build` e publicar a stack com `sam deploy`. Option E: `sam publish`. Correct answer(s): C, D."
+          "A": "Incorrect. The common AWS SAM workflow to redeploy changes is to build the artifacts with `sam build` and publish the stack with `sam deploy`. Option A: `sam init`. Correct answer(s): C, D.",
+          "B": "Incorrect. The common AWS SAM workflow to redeploy changes is to build the artifacts with `sam build` and publish the stack with `sam deploy`. Option B: `sam validate`. Correct answer(s): C, D.",
+          "E": "Incorrect. The common AWS SAM workflow to redeploy changes is to build the artifacts with `sam build` and publish the stack with `sam deploy`. Option E: `sam publish`. Correct answer(s): C, D."
         }
       },
       "pt": {
@@ -658,12 +658,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "C": "Correct. Rolling with additional batch cria capacidade extra temporária durante o deployment, mantendo a capacidade total enquanto usa as instâncias existentes no ambiente. Option C: Rolling with additional batch. Correct answer(s): C."
+          "C": "Correct. Rolling with additional batch creates temporary extra capacity during deployment, maintaining full capacity while using the existing instances in the environment. Option C: Rolling with additional batch. Correct answer(s): C."
         },
         "wrong": {
-          "A": "Incorrect. Rolling with additional batch cria capacidade extra temporária durante o deployment, mantendo a capacidade total enquanto usa as instâncias existentes no ambiente. Option A: All at once. Correct answer(s): C.",
-          "B": "Incorrect. Rolling with additional batch cria capacidade extra temporária durante o deployment, mantendo a capacidade total enquanto usa as instâncias existentes no ambiente. Option B: Rolling. Correct answer(s): C.",
-          "D": "Incorrect. Rolling with additional batch cria capacidade extra temporária durante o deployment, mantendo a capacidade total enquanto usa as instâncias existentes no ambiente. Option D: Immutable. Correct answer(s): C."
+          "A": "Incorrect. Rolling with additional batch creates temporary extra capacity during deployment, maintaining full capacity while using the existing instances in the environment. Option A: All at once. Correct answer(s): C.",
+          "B": "Incorrect. Rolling with additional batch creates temporary extra capacity during deployment, maintaining full capacity while using the existing instances in the environment. Option B: Rolling. Correct answer(s): C.",
+          "D": "Incorrect. Rolling with additional batch creates temporary extra capacity during deployment, maintaining full capacity while using the existing instances in the environment. Option D: Immutable. Correct answer(s): C."
         }
       },
       "pt": {
@@ -705,12 +705,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "A": "Correct. O Instance Metadata Service expõe metadados da instância EC2, incluindo informações de rede como IP público quando disponível. Option A: Get the instance metadata by retrieving `http://169.254.169.254/latest/metadata/`. Correct answer(s): A."
+          "A": "Correct. The Instance Metadata Service exposes EC2 instance metadata, including network information such as public IP when available. Option A: Get the instance metadata by retrieving `http://169.254.169.254/latest/metadata/`. Correct answer(s): A."
         },
         "wrong": {
-          "B": "Incorrect. O Instance Metadata Service expõe metadados da instância EC2, incluindo informações de rede como IP público quando disponível. Option B: Get the instance user data by retrieving `http://169.254.169.254/latest/userdata/`. Correct answer(s): A.",
-          "C": "Incorrect. O Instance Metadata Service expõe metadados da instância EC2, incluindo informações de rede como IP público quando disponível. Option C: Get the application to run `IFCONFIG` to get the public IP address. Correct answer(s): A.",
-          "D": "Incorrect. O Instance Metadata Service expõe metadados da instância EC2, incluindo informações de rede como IP público quando disponível. Option D: Get the application to run `IPCONFIG` to get the public IP address. Correct answer(s): A."
+          "B": "Incorrect. The Instance Metadata Service exposes EC2 instance metadata, including network information such as public IP when available. Option B: Get the instance user data by retrieving `http://169.254.169.254/latest/userdata/`. Correct answer(s): A.",
+          "C": "Incorrect. The Instance Metadata Service exposes EC2 instance metadata, including network information such as public IP when available. Option C: Get the application to run `IFCONFIG` to get the public IP address. Correct answer(s): A.",
+          "D": "Incorrect. The Instance Metadata Service exposes EC2 instance metadata, including network information such as public IP when available. Option D: Get the application to run `IPCONFIG` to get the public IP address. Correct answer(s): A."
         }
       },
       "pt": {
@@ -752,12 +752,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "D": "Correct. O cache do API Gateway é cobrado por stage e tamanho. Para reduzir custo, ambientes não produtivos devem habilitar cache apenas quando necessário. Option D: Enable the cache for development and test environments only when needed. Correct answer(s): D."
+          "D": "Correct. API Gateway cache is billed by stage and size. To reduce cost, non-production environments should enable cache only when needed. Option D: Enable the cache for development and test environments only when needed. Correct answer(s): D."
         },
         "wrong": {
-          "A": "Incorrect. O cache do API Gateway é cobrado por stage e tamanho. Para reduzir custo, ambientes não produtivos devem habilitar cache apenas quando necessário. Option A: Create a single API Gateway with all three stages. Correct answer(s): D.",
-          "B": "Incorrect. O cache do API Gateway é cobrado por stage e tamanho. Para reduzir custo, ambientes não produtivos devem habilitar cache apenas quando necessário. Option B: Create three API Gateways, one for each stage in a single AWS account. Correct answer(s): D.",
-          "C": "Incorrect. O cache do API Gateway é cobrado por stage e tamanho. Para reduzir custo, ambientes não produtivos devem habilitar cache apenas quando necessário. Option C: Create an API Gateway in three separate AWS accounts. Correct answer(s): D."
+          "A": "Incorrect. API Gateway cache is billed by stage and size. To reduce cost, non-production environments should enable cache only when needed. Option A: Create a single API Gateway with all three stages. Correct answer(s): D.",
+          "B": "Incorrect. API Gateway cache is billed by stage and size. To reduce cost, non-production environments should enable cache only when needed. Option B: Create three API Gateways, one for each stage in a single AWS account. Correct answer(s): D.",
+          "C": "Incorrect. API Gateway cache is billed by stage and size. To reduce cost, non-production environments should enable cache only when needed. Option C: Create an API Gateway in three separate AWS accounts. Correct answer(s): D."
         }
       },
       "pt": {
@@ -799,12 +799,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "C": "Correct. Read replicas do Amazon RDS escalam workloads read-heavy, permitindo direcionar consultas de leitura para réplicas e reduzir carga na instância primária. Option C: Add a connection string to use an RDS read replica for read queries. Correct answer(s): C."
+          "C": "Correct. Amazon RDS read replicas scale read-heavy workloads by allowing read queries to be directed to replicas, reducing load on the primary instance. Option C: Add a connection string to use an RDS read replica for read queries. Correct answer(s): C."
         },
         "wrong": {
-          "A": "Incorrect. Read replicas do Amazon RDS escalam workloads read-heavy, permitindo direcionar consultas de leitura para réplicas e reduzir carga na instância primária. Option A: Add database retries to effectively use RDS with vertical scaling. Correct answer(s): C.",
-          "B": "Incorrect. Read replicas do Amazon RDS escalam workloads read-heavy, permitindo direcionar consultas de leitura para réplicas e reduzir carga na instância primária. Option B: Use RDS with multi-AZ deployment. Correct answer(s): C.",
-          "D": "Incorrect. Read replicas do Amazon RDS escalam workloads read-heavy, permitindo direcionar consultas de leitura para réplicas e reduzir carga na instância primária. Option D: Add a connection string to use a read replica on an EC2 instance. Correct answer(s): C."
+          "A": "Incorrect. Amazon RDS read replicas scale read-heavy workloads by allowing read queries to be directed to replicas, reducing load on the primary instance. Option A: Add database retries to effectively use RDS with vertical scaling. Correct answer(s): C.",
+          "B": "Incorrect. Amazon RDS read replicas scale read-heavy workloads by allowing read queries to be directed to replicas, reducing load on the primary instance. Option B: Use RDS with multi-AZ deployment. Correct answer(s): C.",
+          "D": "Incorrect. Amazon RDS read replicas scale read-heavy workloads by allowing read queries to be directed to replicas, reducing load on the primary instance. Option D: Add a connection string to use a read replica on an EC2 instance. Correct answer(s): C."
         }
       },
       "pt": {
@@ -846,12 +846,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "A": "Correct. Arquitetura event-driven processa dados conforme eventos ocorrem, reduzindo dependência de batches agendados e melhorando disponibilidade quase em tempo real. Option A: Event driven. Correct answer(s): A."
+          "A": "Correct. Event-driven architecture processes data as events occur, reducing reliance on scheduled batches and improving near-real-time availability. Option A: Event driven. Correct answer(s): A."
         },
         "wrong": {
-          "B": "Incorrect. Arquitetura event-driven processa dados conforme eventos ocorrem, reduzindo dependência de batches agendados e melhorando disponibilidade quase em tempo real. Option B: Client served driven. Correct answer(s): A.",
-          "C": "Incorrect. Arquitetura event-driven processa dados conforme eventos ocorrem, reduzindo dependência de batches agendados e melhorando disponibilidade quase em tempo real. Option C: Fan-out driven. Correct answer(s): A.",
-          "D": "Incorrect. Arquitetura event-driven processa dados conforme eventos ocorrem, reduzindo dependência de batches agendados e melhorando disponibilidade quase em tempo real. Option D: Schedule driven. Correct answer(s): A."
+          "B": "Incorrect. Event-driven architecture processes data as events occur, reducing reliance on scheduled batches and improving near-real-time availability. Option B: Client served driven. Correct answer(s): A.",
+          "C": "Incorrect. Event-driven architecture processes data as events occur, reducing reliance on scheduled batches and improving near-real-time availability. Option C: Fan-out driven. Correct answer(s): A.",
+          "D": "Incorrect. Event-driven architecture processes data as events occur, reducing reliance on scheduled batches and improving near-real-time availability. Option D: Schedule driven. Correct answer(s): A."
         }
       },
       "pt": {
@@ -896,13 +896,13 @@
     "explanation": {
       "en": {
         "correct": {
-          "C": "Correct. `ProvisionedThroughputExceededException` indica excesso de throughput ou padrão de retries inadequado no DynamoDB. Exponential backoff reduz pressão e on-demand adapta capacidade automaticamente. Option C: Reduce the frequency of requests to DynamoDB by implement ng exponential backoff. Correct answer(s): C, E.",
-          "E": "Correct. `ProvisionedThroughputExceededException` indica excesso de throughput ou padrão de retries inadequado no DynamoDB. Exponential backoff reduz pressão e on-demand adapta capacidade automaticamente. Option E: Change the capacity mode of the DynamoDB table from provisioned to on-demand. Correct answer(s): C, E."
+          "C": "Correct. `ProvisionedThroughputExceededException` indicates excessive throughput or an inadequate retry pattern on DynamoDB. Exponential backoff reduces pressure and on-demand adapts capacity automatically. Option C: Reduce the frequency of requests to DynamoDB by implement ng exponential backoff. Correct answer(s): C, E.",
+          "E": "Correct. `ProvisionedThroughputExceededException` indicates excessive throughput or an inadequate retry pattern on DynamoDB. Exponential backoff reduces pressure and on-demand adapts capacity automatically. Option E: Change the capacity mode of the DynamoDB table from provisioned to on-demand. Correct answer(s): C, E."
         },
         "wrong": {
-          "A": "Incorrect. `ProvisionedThroughputExceededException` indica excesso de throughput ou padrão de retries inadequado no DynamoDB. Exponential backoff reduz pressão e on-demand adapta capacidade automaticamente. Option A: Move the application to a larger EC instance. Correct answer(s): C, E.",
-          "B": "Incorrect. `ProvisionedThroughputExceededException` indica excesso de throughput ou padrão de retries inadequado no DynamoDB. Exponential backoff reduz pressão e on-demand adapta capacidade automaticamente. Option B: Increase the number or read capacity units (RCUs) that are provisioned for the DynamoDB table. Correct answer(s): C, E.",
-          "D": "Incorrect. `ProvisionedThroughputExceededException` indica excesso de throughput ou padrão de retries inadequado no DynamoDB. Exponential backoff reduz pressão e on-demand adapta capacidade automaticamente. Option D: Increase the frequency of requests to DynamoDB by decreasing the retry delay. Correct answer(s): C, E."
+          "A": "Incorrect. `ProvisionedThroughputExceededException` indicates excessive throughput or an inadequate retry pattern on DynamoDB. Exponential backoff reduces pressure and on-demand adapts capacity automatically. Option A: Move the application to a larger EC instance. Correct answer(s): C, E.",
+          "B": "Incorrect. `ProvisionedThroughputExceededException` indicates excessive throughput or an inadequate retry pattern on DynamoDB. Exponential backoff reduces pressure and on-demand adapts capacity automatically. Option B: Increase the number or read capacity units (RCUs) that are provisioned for the DynamoDB table. Correct answer(s): C, E.",
+          "D": "Incorrect. `ProvisionedThroughputExceededException` indicates excessive throughput or an inadequate retry pattern on DynamoDB. Exponential backoff reduces pressure and on-demand adapts capacity automatically. Option D: Increase the frequency of requests to DynamoDB by decreasing the retry delay. Correct answer(s): C, E."
         }
       },
       "pt": {
@@ -945,12 +945,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "C": "Correct. SSE-KMS usa AWS KMS para controle e auditoria de chaves, mantendo a criptografia server-side gerenciada pela AWS sem exigir infraestrutura própria. Option C: Server-side encryption with AWS KMS managed keys (SSE-KMS). Correct answer(s): C."
+          "C": "Correct. SSE-KMS uses AWS KMS for key control and auditing, maintaining server-side encryption managed by AWS without requiring your own infrastructure. Option C: Server-side encryption with AWS KMS managed keys (SSE-KMS). Correct answer(s): C."
         },
         "wrong": {
-          "A": "Incorrect. SSE-KMS usa AWS KMS para controle e auditoria de chaves, mantendo a criptografia server-side gerenciada pela AWS sem exigir infraestrutura própria. Option A: Server-side encryption with Amazon S3 managed keys (SSE-S3). Correct answer(s): C.",
-          "B": "Incorrect. SSE-KMS usa AWS KMS para controle e auditoria de chaves, mantendo a criptografia server-side gerenciada pela AWS sem exigir infraestrutura própria. Option B: Server-side encryption with customer-provided encryption keys (SSE-C). Correct answer(s): C.",
-          "D": "Incorrect. SSE-KMS usa AWS KMS para controle e auditoria de chaves, mantendo a criptografia server-side gerenciada pela AWS sem exigir infraestrutura própria. Option D: Client-side encryption. Correct answer(s): C."
+          "A": "Incorrect. SSE-KMS uses AWS KMS for key control and auditing, maintaining server-side encryption managed by AWS without requiring your own infrastructure. Option A: Server-side encryption with Amazon S3 managed keys (SSE-S3). Correct answer(s): C.",
+          "B": "Incorrect. SSE-KMS uses AWS KMS for key control and auditing, maintaining server-side encryption managed by AWS without requiring your own infrastructure. Option B: Server-side encryption with customer-provided encryption keys (SSE-C). Correct answer(s): C.",
+          "D": "Incorrect. SSE-KMS uses AWS KMS for key control and auditing, maintaining server-side encryption managed by AWS without requiring your own infrastructure. Option D: Client-side encryption. Correct answer(s): C."
         }
       },
       "pt": {
@@ -992,12 +992,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "B": "Correct. Com KCL, cada shard ativo é processado por apenas um worker por aplicação consumer. Com 6 shards, o máximo útil de workers/instâncias é 6. Option B: 6. Correct answer(s): B."
+          "B": "Correct. With KCL, each active shard is processed by only one worker per consumer application. With 6 shards, the maximum useful number of workers/instances is 6. Option B: 6. Correct answer(s): B."
         },
         "wrong": {
-          "A": "Incorrect. Com KCL, cada shard ativo é processado por apenas um worker por aplicação consumer. Com 6 shards, o máximo útil de workers/instâncias é 6. Option A: 12. Correct answer(s): B.",
-          "C": "Incorrect. Com KCL, cada shard ativo é processado por apenas um worker por aplicação consumer. Com 6 shards, o máximo útil de workers/instâncias é 6. Option C: 4. Correct answer(s): B.",
-          "D": "Incorrect. Com KCL, cada shard ativo é processado por apenas um worker por aplicação consumer. Com 6 shards, o máximo útil de workers/instâncias é 6. Option D: 1. Correct answer(s): B."
+          "A": "Incorrect. With KCL, each active shard is processed by only one worker per consumer application. With 6 shards, the maximum useful number of workers/instances is 6. Option A: 12. Correct answer(s): B.",
+          "C": "Incorrect. With KCL, each active shard is processed by only one worker per consumer application. With 6 shards, the maximum useful number of workers/instances is 6. Option C: 4. Correct answer(s): B.",
+          "D": "Incorrect. With KCL, each active shard is processed by only one worker per consumer application. With 6 shards, the maximum useful number of workers/instances is 6. Option D: 1. Correct answer(s): B."
         }
       },
       "pt": {
@@ -1039,12 +1039,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "D": "Correct. Amazon Cognito oferece recursos de identidade para aplicações mobile/web e historicamente cobre sincronização de dados de usuário sem backend próprio nesse tipo de cenário de prova. Option D: Amazon Cognito. Correct answer(s): D."
+          "D": "Correct. Amazon Cognito offers identity resources for mobile/web applications and historically covers user data synchronization without a custom backend in this type of exam scenario. Option D: Amazon Cognito. Correct answer(s): D."
         },
         "wrong": {
-          "A": "Incorrect. Amazon Cognito oferece recursos de identidade para aplicações mobile/web e historicamente cobre sincronização de dados de usuário sem backend próprio nesse tipo de cenário de prova. Option A: AWS Lambda. Correct answer(s): D.",
-          "B": "Incorrect. Amazon Cognito oferece recursos de identidade para aplicações mobile/web e historicamente cobre sincronização de dados de usuário sem backend próprio nesse tipo de cenário de prova. Option B: Amazon S3. Correct answer(s): D.",
-          "C": "Incorrect. Amazon Cognito oferece recursos de identidade para aplicações mobile/web e historicamente cobre sincronização de dados de usuário sem backend próprio nesse tipo de cenário de prova. Option C: Amazon DynamoDB. Correct answer(s): D."
+          "A": "Incorrect. Amazon Cognito offers identity resources for mobile/web applications and historically covers user data synchronization without a custom backend in this type of exam scenario. Option A: AWS Lambda. Correct answer(s): D.",
+          "B": "Incorrect. Amazon Cognito offers identity resources for mobile/web applications and historically covers user data synchronization without a custom backend in this type of exam scenario. Option B: Amazon S3. Correct answer(s): D.",
+          "C": "Incorrect. Amazon Cognito offers identity resources for mobile/web applications and historically covers user data synchronization without a custom backend in this type of exam scenario. Option C: Amazon DynamoDB. Correct answer(s): D."
         }
       },
       "pt": {
@@ -1089,13 +1089,13 @@
     "explanation": {
       "en": {
         "correct": {
-          "A": "Correct. Elastic Beanstalk aceita versões de aplicação empacotadas, especialmente `.zip`, que podem ser enviadas e implantadas pelo console ou via AWS CLI. Option A: Package the application code into a `.zip` file, and upload, then deploy the packaged application from the AWS Management Console. Correct answer(s): A, D.",
-          "D": "Correct. Elastic Beanstalk aceita versões de aplicação empacotadas, especialmente `.zip`, que podem ser enviadas e implantadas pelo console ou via AWS CLI. Option D: Package the application code into a `.zip` file, create a new application version from the packaged application by using AWS CLI, then update the environment by using AWS CLI. Correct answer(s): A, D."
+          "A": "Correct. Elastic Beanstalk accepts packaged application versions, especially `.zip`, which can be uploaded and deployed from the console or via AWS CLI. Option A: Package the application code into a `.zip` file, and upload, then deploy the packaged application from the AWS Management Console. Correct answer(s): A, D.",
+          "D": "Correct. Elastic Beanstalk accepts packaged application versions, especially `.zip`, which can be uploaded and deployed from the console or via AWS CLI. Option D: Package the application code into a `.zip` file, create a new application version from the packaged application by using AWS CLI, then update the environment by using AWS CLI. Correct answer(s): A, D."
         },
         "wrong": {
-          "B": "Incorrect. Elastic Beanstalk aceita versões de aplicação empacotadas, especialmente `.zip`, que podem ser enviadas e implantadas pelo console ou via AWS CLI. Option B: Package the application code into a `.tar` file, create a new application version from the AWS Management Console, then update the environment by using AWS CLI. Correct answer(s): A, D.",
-          "C": "Incorrect. Elastic Beanstalk aceita versões de aplicação empacotadas, especialmente `.zip`, que podem ser enviadas e implantadas pelo console ou via AWS CLI. Option C: Package the application code into a `.tar` file, and upload and deploy the packaged application from the AWS Management Console. Correct answer(s): A, D.",
-          "E": "Incorrect. Elastic Beanstalk aceita versões de aplicação empacotadas, especialmente `.zip`, que podem ser enviadas e implantadas pelo console ou via AWS CLI. Option E: Package the application code into a `.zip` file, create a new application version from the AWS Management Console, then rebuild the environment by using AWS CLI. Correct answer(s): A, D."
+          "B": "Incorrect. Elastic Beanstalk accepts packaged application versions, especially `.zip`, which can be uploaded and deployed from the console or via AWS CLI. Option B: Package the application code into a `.tar` file, create a new application version from the AWS Management Console, then update the environment by using AWS CLI. Correct answer(s): A, D.",
+          "C": "Incorrect. Elastic Beanstalk accepts packaged application versions, especially `.zip`, which can be uploaded and deployed from the console or via AWS CLI. Option C: Package the application code into a `.tar` file, and upload and deploy the packaged application from the AWS Management Console. Correct answer(s): A, D.",
+          "E": "Incorrect. Elastic Beanstalk accepts packaged application versions, especially `.zip`, which can be uploaded and deployed from the console or via AWS CLI. Option E: Package the application code into a `.zip` file, create a new application version from the AWS Management Console, then rebuild the environment by using AWS CLI. Correct answer(s): A, D."
         }
       },
       "pt": {
@@ -1138,12 +1138,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "A": "Correct. O diretório `/tmp` do Lambda persiste durante a reutilização do execution environment, permitindo cache local entre invocações quentes. Option A: Cache the file in the `/tmp` directory. Correct answer(s): A."
+          "A": "Correct. The Lambda `/tmp` directory persists during execution environment reuse, enabling local caching between warm invocations. Option A: Cache the file in the `/tmp` directory. Correct answer(s): A."
         },
         "wrong": {
-          "B": "Incorrect. O diretório `/tmp` do Lambda persiste durante a reutilização do execution environment, permitindo cache local entre invocações quentes. Option B: Increase the Lambda maximum execution time. Correct answer(s): A.",
-          "C": "Incorrect. O diretório `/tmp` do Lambda persiste durante a reutilização do execution environment, permitindo cache local entre invocações quentes. Option C: Put an Elastic Load Balancer in front of the Lambda function. Correct answer(s): A.",
-          "D": "Incorrect. O diretório `/tmp` do Lambda persiste durante a reutilização do execution environment, permitindo cache local entre invocações quentes. Option D: Cache the file in Amazon S3. Correct answer(s): A."
+          "B": "Incorrect. The Lambda `/tmp` directory persists during execution environment reuse, enabling local caching between warm invocations. Option B: Increase the Lambda maximum execution time. Correct answer(s): A.",
+          "C": "Incorrect. The Lambda `/tmp` directory persists during execution environment reuse, enabling local caching between warm invocations. Option C: Put an Elastic Load Balancer in front of the Lambda function. Correct answer(s): A.",
+          "D": "Incorrect. The Lambda `/tmp` directory persists during execution environment reuse, enabling local caching between warm invocations. Option D: Cache the file in Amazon S3. Correct answer(s): A."
         }
       },
       "pt": {
@@ -1185,12 +1185,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "B": "Correct. Um GSI com projeção mínima permite ler apenas atributos necessários, reduzindo consumo de capacidade e custo quando itens possuem atributos grandes. Option B: Create a global secondary index with a minimum set of projected attributes. Correct answer(s): B."
+          "B": "Correct. A GSI with minimum projection allows reading only the necessary attributes, reducing capacity consumption and cost when items have large attributes. Option B: Create a global secondary index with a minimum set of projected attributes. Correct answer(s): B."
         },
         "wrong": {
-          "A": "Incorrect. Um GSI com projeção mínima permite ler apenas atributos necessários, reduzindo consumo de capacidade e custo quando itens possuem atributos grandes. Option A: Batch all the writes, and perform the write operations when no or few reads are being performed. Correct answer(s): B.",
-          "C": "Incorrect. Um GSI com projeção mínima permite ler apenas atributos necessários, reduzindo consumo de capacidade e custo quando itens possuem atributos grandes. Option C: Implement exponential backoffs in the application. Correct answer(s): B.",
-          "D": "Incorrect. Um GSI com projeção mínima permite ler apenas atributos necessários, reduzindo consumo de capacidade e custo quando itens possuem atributos grandes. Option D: Load balance the reads to the table using an Application Load Balancer. Correct answer(s): B."
+          "A": "Incorrect. A GSI with minimum projection allows reading only the necessary attributes, reducing capacity consumption and cost when items have large attributes. Option A: Batch all the writes, and perform the write operations when no or few reads are being performed. Correct answer(s): B.",
+          "C": "Incorrect. A GSI with minimum projection allows reading only the necessary attributes, reducing capacity consumption and cost when items have large attributes. Option C: Implement exponential backoffs in the application. Correct answer(s): B.",
+          "D": "Incorrect. A GSI with minimum projection allows reading only the necessary attributes, reducing capacity consumption and cost when items have large attributes. Option D: Load balance the reads to the table using an Application Load Balancer. Correct answer(s): B."
         }
       },
       "pt": {
@@ -1232,12 +1232,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "D": "Correct. Mapping templates no API Gateway transformam parâmetros da requisição em payload/argumentos esperados pela integração Lambda. Option D: Create a mapping template. Correct answer(s): D."
+          "D": "Correct. Mapping templates in API Gateway transform request parameters into the payload/arguments expected by the Lambda integration. Option D: Create a mapping template. Correct answer(s): D."
         },
         "wrong": {
-          "A": "Incorrect. Mapping templates no API Gateway transformam parâmetros da requisição em payload/argumentos esperados pela integração Lambda. Option A: Enable request validation. Correct answer(s): D.",
-          "B": "Incorrect. Mapping templates no API Gateway transformam parâmetros da requisição em payload/argumentos esperados pela integração Lambda. Option B: Include the Amazon Resource Name (ARN) of the Lambda function. Correct answer(s): D.",
-          "C": "Incorrect. Mapping templates no API Gateway transformam parâmetros da requisição em payload/argumentos esperados pela integração Lambda. Option C: Change the integration type. Correct answer(s): D."
+          "A": "Incorrect. Mapping templates in API Gateway transform request parameters into the payload/arguments expected by the Lambda integration. Option A: Enable request validation. Correct answer(s): D.",
+          "B": "Incorrect. Mapping templates in API Gateway transform request parameters into the payload/arguments expected by the Lambda integration. Option B: Include the Amazon Resource Name (ARN) of the Lambda function. Correct answer(s): D.",
+          "C": "Incorrect. Mapping templates in API Gateway transform request parameters into the payload/arguments expected by the Lambda integration. Option C: Change the integration type. Correct answer(s): D."
         }
       },
       "pt": {
@@ -1279,12 +1279,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "C": "Correct. Para máquinas locais, usuários IAM individuais com access keys únicas permitem rastreabilidade e revogação por desenvolvedor; compartilhar credenciais é inseguro. Option C: Create an IAM user for each developer on the team: provide each developer with a unique access key. Correct answer(s): C."
+          "C": "Correct. For local machines, individual IAM users with unique access keys allow traceability and revocation per developer; sharing credentials is insecure. Option C: Create an IAM user for each developer on the team: provide each developer with a unique access key. Correct answer(s): C."
         },
         "wrong": {
-          "A": "Incorrect. Para máquinas locais, usuários IAM individuais com access keys únicas permitem rastreabilidade e revogação por desenvolvedor; compartilhar credenciais é inseguro. Option A: Use an IAM role to assume a role and execute API calls using the role. Correct answer(s): C.",
-          "B": "Incorrect. Para máquinas locais, usuários IAM individuais com access keys únicas permitem rastreabilidade e revogação por desenvolvedor; compartilhar credenciais é inseguro. Option B: Create an IAM user to be shared with the entire development team, provide the development team with the access key. Correct answer(s): C.",
-          "D": "Incorrect. Para máquinas locais, usuários IAM individuais com access keys únicas permitem rastreabilidade e revogação por desenvolvedor; compartilhar credenciais é inseguro. Option D: Set up a federation through an Amazon Cognito user pool. Correct answer(s): C."
+          "A": "Incorrect. For local machines, individual IAM users with unique access keys allow traceability and revocation per developer; sharing credentials is insecure. Option A: Use an IAM role to assume a role and execute API calls using the role. Correct answer(s): C.",
+          "B": "Incorrect. For local machines, individual IAM users with unique access keys allow traceability and revocation per developer; sharing credentials is insecure. Option B: Create an IAM user to be shared with the entire development team, provide the development team with the access key. Correct answer(s): C.",
+          "D": "Incorrect. For local machines, individual IAM users with unique access keys allow traceability and revocation per developer; sharing credentials is insecure. Option D: Set up a federation through an Amazon Cognito user pool. Correct answer(s): C."
         }
       },
       "pt": {
@@ -1326,12 +1326,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "B": "Correct. Leituras fortemente consistentes no DynamoDB consomem mais capacidade que leituras eventualmente consistentes para o mesmo volume de dados. Option B: Strongly consistent reads use more throughput than eventually consistent reads. Correct answer(s): B."
+          "B": "Correct. Strongly consistent reads in DynamoDB consume more capacity than eventually consistent reads for the same volume of data. Option B: Strongly consistent reads use more throughput than eventually consistent reads. Correct answer(s): B."
         },
         "wrong": {
-          "A": "Incorrect. Leituras fortemente consistentes no DynamoDB consomem mais capacidade que leituras eventualmente consistentes para o mesmo volume de dados. Option A: Strongly consistent reads use the same amount of throughput as eventually consistent reads. Correct answer(s): B.",
-          "C": "Incorrect. Leituras fortemente consistentes no DynamoDB consomem mais capacidade que leituras eventualmente consistentes para o mesmo volume de dados. Option C: Strongly consistent reads use less throughput than eventually consistent reads. Correct answer(s): B.",
-          "D": "Incorrect. Leituras fortemente consistentes no DynamoDB consomem mais capacidade que leituras eventualmente consistentes para o mesmo volume de dados. Option D: Strongly consistent reads use variable throughput depending on read activity. Correct answer(s): B."
+          "A": "Incorrect. Strongly consistent reads in DynamoDB consume more capacity than eventually consistent reads for the same volume of data. Option A: Strongly consistent reads use the same amount of throughput as eventually consistent reads. Correct answer(s): B.",
+          "C": "Incorrect. Strongly consistent reads in DynamoDB consume more capacity than eventually consistent reads for the same volume of data. Option C: Strongly consistent reads use less throughput than eventually consistent reads. Correct answer(s): B.",
+          "D": "Incorrect. Strongly consistent reads in DynamoDB consume more capacity than eventually consistent reads for the same volume of data. Option D: Strongly consistent reads use variable throughput depending on read activity. Correct answer(s): B."
         }
       },
       "pt": {
@@ -1373,12 +1373,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "A": "Correct. O Elastic Beanstalk permite fazer upload de uma nova versão da aplicação e implantá-la diretamente pelo console. Option A: Upload and deploy the new application version in the Elastic Beanstalk console. Correct answer(s): A."
+          "A": "Correct. Elastic Beanstalk allows you to upload a new application version and deploy it directly from the console. Option A: Upload and deploy the new application version in the Elastic Beanstalk console. Correct answer(s): A."
         },
         "wrong": {
-          "B": "Incorrect. O Elastic Beanstalk permite fazer upload de uma nova versão da aplicação e implantá-la diretamente pelo console. Option B: Use the eb init CLI command to deploy a new version. Correct answer(s): A.",
-          "C": "Incorrect. O Elastic Beanstalk permite fazer upload de uma nova versão da aplicação e implantá-la diretamente pelo console. Option C: Terminate the current Elastic Beanstalk environment and create a new one. Correct answer(s): A.",
-          "D": "Incorrect. O Elastic Beanstalk permite fazer upload de uma nova versão da aplicação e implantá-la diretamente pelo console. Option D: Modify the ebextensions folder to add a source option to services. Correct answer(s): A."
+          "B": "Incorrect. Elastic Beanstalk allows you to upload a new application version and deploy it directly from the console. Option B: Use the eb init CLI command to deploy a new version. Correct answer(s): A.",
+          "C": "Incorrect. Elastic Beanstalk allows you to upload a new application version and deploy it directly from the console. Option C: Terminate the current Elastic Beanstalk environment and create a new one. Correct answer(s): A.",
+          "D": "Incorrect. Elastic Beanstalk allows you to upload a new application version and deploy it directly from the console. Option D: Modify the ebextensions folder to add a source option to services. Correct answer(s): A."
         }
       },
       "pt": {
@@ -1420,12 +1420,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "A": "Correct. A questão original está incompleta nas alternativas disponíveis, portanto a validação técnica fica limitada ao material-fonte fornecido. Option A: Option A. Correct answer(s): A."
+          "A": "Correct. The original question is incomplete in the available options, so the technical validation is limited to the source material provided. Option A: Option A. Correct answer(s): A."
         },
         "wrong": {
-          "B": "Incorrect. A questão original está incompleta nas alternativas disponíveis, portanto a validação técnica fica limitada ao material-fonte fornecido. Option B: Option B. Correct answer(s): A.",
-          "C": "Incorrect. A questão original está incompleta nas alternativas disponíveis, portanto a validação técnica fica limitada ao material-fonte fornecido. Option C: Option C. Correct answer(s): A.",
-          "D": "Incorrect. A questão original está incompleta nas alternativas disponíveis, portanto a validação técnica fica limitada ao material-fonte fornecido. Option D: Option D. Correct answer(s): A."
+          "B": "Incorrect. The original question is incomplete in the available options, so the technical validation is limited to the source material provided. Option B: Option B. Correct answer(s): A.",
+          "C": "Incorrect. The original question is incomplete in the available options, so the technical validation is limited to the source material provided. Option C: Option C. Correct answer(s): A.",
+          "D": "Incorrect. The original question is incomplete in the available options, so the technical validation is limited to the source material provided. Option D: Option D. Correct answer(s): A."
         }
       },
       "pt": {
@@ -1467,12 +1467,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "B": "Correct. Aliases e versões do Lambda permitem traffic shifting/canary deployment, reduzindo impacto ao enviar pequena porcentagem do tráfego para a nova versão e reverter rapidamente. Option B: Change the application to use an alias that points to the current version. Deploy the new version of the code. Update the alias to direct 10% of users to the newly deployed version. If too many errors are encountered, send 100% of traffic to the previous version. Correct answer(s): B."
+          "B": "Correct. Lambda aliases and versions enable traffic shifting/canary deployment, reducing impact by sending a small percentage of traffic to the new version and reverting quickly. Option B: Change the application to use an alias that points to the current version. Deploy the new version of the code. Update the alias to direct 10% of users to the newly deployed version. If too many errors are encountered, send 100% of traffic to the previous version. Correct answer(s): B."
         },
         "wrong": {
-          "A": "Incorrect. Aliases e versões do Lambda permitem traffic shifting/canary deployment, reduzindo impacto ao enviar pequena porcentagem do tráfego para a nova versão e reverter rapidamente. Option A: Change the application to use an alias that points to the current version. Deploy the new version of the code. Update the alias to use the newly deployed version. If too many errors are encountered, point the alias back to the previous version. Correct answer(s): B.",
-          "C": "Incorrect. Aliases e versões do Lambda permitem traffic shifting/canary deployment, reduzindo impacto ao enviar pequena porcentagem do tráfego para a nova versão e reverter rapidamente. Option C: Do not make any changes to the application Deploy the new version of the code. If too many errors are encountered, point the application back to the previous version using the version number in the Amazon Resource Name (ARN). Correct answer(s): B.",
-          "D": "Incorrect. Aliases e versões do Lambda permitem traffic shifting/canary deployment, reduzindo impacto ao enviar pequena porcentagem do tráfego para a nova versão e reverter rapidamente. Option D: Create three aliases: new, existing, and router. Point the existing alias to the current version. Have the router alias direct 100% of users to the existing alias. Update the application to use the router alias. Deploy the new version of the code. Point the new alias to this version. Update the router alias to direct 10% of users to the new alias. If too many errors are encountered, send 100% of traffic to the existing alias. Correct answer(s): B."
+          "A": "Incorrect. Lambda aliases and versions enable traffic shifting/canary deployment, reducing impact by sending a small percentage of traffic to the new version and reverting quickly. Option A: Change the application to use an alias that points to the current version. Deploy the new version of the code. Update the alias to use the newly deployed version. If too many errors are encountered, point the alias back to the previous version. Correct answer(s): B.",
+          "C": "Incorrect. Lambda aliases and versions enable traffic shifting/canary deployment, reducing impact by sending a small percentage of traffic to the new version and reverting quickly. Option C: Do not make any changes to the application Deploy the new version of the code. If too many errors are encountered, point the application back to the previous version using the version number in the Amazon Resource Name (ARN). Correct answer(s): B.",
+          "D": "Incorrect. Lambda aliases and versions enable traffic shifting/canary deployment, reducing impact by sending a small percentage of traffic to the new version and reverting quickly. Option D: Create three aliases: new, existing, and router. Point the existing alias to the current version. Have the router alias direct 100% of users to the existing alias. Update the application to use the router alias. Deploy the new version of the code. Point the new alias to this version. Update the router alias to direct 10% of users to the new alias. If too many errors are encountered, send 100% of traffic to the existing alias. Correct answer(s): B."
         }
       },
       "pt": {
@@ -1514,12 +1514,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "B": "Correct. Componentes com necessidades de escala independentes devem ficar em ambientes Elastic Beanstalk separados, permitindo políticas e capacidade distintas. Option B: Deploy each component in a separate Elastic Beanstalk environment. Correct answer(s): B."
+          "B": "Correct. Components with independent scaling requirements should be placed in separate Elastic Beanstalk environments, allowing distinct policies and capacity. Option B: Deploy each component in a separate Elastic Beanstalk environment. Correct answer(s): B."
         },
         "wrong": {
-          "A": "Incorrect. Componentes com necessidades de escala independentes devem ficar em ambientes Elastic Beanstalk separados, permitindo políticas e capacidade distintas. Option A: Deploy the application in a single Elastic Beanstalk environment. Correct answer(s): B.",
-          "C": "Incorrect. Componentes com necessidades de escala independentes devem ficar em ambientes Elastic Beanstalk separados, permitindo políticas e capacidade distintas. Option C: Use multiple Elastic Beanstalk environments for the HTTP component but one environment for the background task component. Correct answer(s): B.",
-          "D": "Incorrect. Componentes com necessidades de escala independentes devem ficar em ambientes Elastic Beanstalk separados, permitindo políticas e capacidade distintas. Option D: Use multiple Elastic Beanstalk environments for the background task component but one environment for the HTTP component. Correct answer(s): B."
+          "A": "Incorrect. Components with independent scaling requirements should be placed in separate Elastic Beanstalk environments, allowing distinct policies and capacity. Option A: Deploy the application in a single Elastic Beanstalk environment. Correct answer(s): B.",
+          "C": "Incorrect. Components with independent scaling requirements should be placed in separate Elastic Beanstalk environments, allowing distinct policies and capacity. Option C: Use multiple Elastic Beanstalk environments for the HTTP component but one environment for the background task component. Correct answer(s): B.",
+          "D": "Incorrect. Components with independent scaling requirements should be placed in separate Elastic Beanstalk environments, allowing distinct policies and capacity. Option D: Use multiple Elastic Beanstalk environments for the background task component but one environment for the HTTP component. Correct answer(s): B."
         }
       },
       "pt": {
@@ -1561,12 +1561,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "A": "Correct. Change sets do CloudFormation mostram quais recursos serão criados, modificados ou removidos antes da execução da atualização da stack. Option A: Investigate the change sets. Correct answer(s): A."
+          "A": "Correct. CloudFormation change sets show which resources will be created, modified, or removed before executing the stack update. Option A: Investigate the change sets. Correct answer(s): A."
         },
         "wrong": {
-          "B": "Incorrect. Change sets do CloudFormation mostram quais recursos serão criados, modificados ou removidos antes da execução da atualização da stack. Option B: Investigate the stack policies. Correct answer(s): A.",
-          "C": "Incorrect. Change sets do CloudFormation mostram quais recursos serão criados, modificados ou removidos antes da execução da atualização da stack. Option C: Investigate the `Metadata` section. Correct answer(s): A.",
-          "D": "Incorrect. Change sets do CloudFormation mostram quais recursos serão criados, modificados ou removidos antes da execução da atualização da stack. Option D: Investigate the `Resources` section. Correct answer(s): A."
+          "B": "Incorrect. CloudFormation change sets show which resources will be created, modified, or removed before executing the stack update. Option B: Investigate the stack policies. Correct answer(s): A.",
+          "C": "Incorrect. CloudFormation change sets show which resources will be created, modified, or removed before executing the stack update. Option C: Investigate the `Metadata` section. Correct answer(s): A.",
+          "D": "Incorrect. CloudFormation change sets show which resources will be created, modified, or removed before executing the stack update. Option D: Investigate the `Resources` section. Correct answer(s): A."
         }
       },
       "pt": {
@@ -1608,12 +1608,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "C": "Correct. Versões e aliases do Lambda desacoplam o endpoint do API Gateway da versão física do código, permitindo trocar a versão apontada sem alterar o API Gateway. Option C: Create aliases and versions in AWS Lambda. Correct answer(s): C."
+          "C": "Correct. Lambda versions and aliases decouple the API Gateway endpoint from the physical code version, allowing the pointed version to be changed without modifying the API Gateway. Option C: Create aliases and versions in AWS Lambda. Correct answer(s): C."
         },
         "wrong": {
-          "A": "Incorrect. Versões e aliases do Lambda desacoplam o endpoint do API Gateway da versão física do código, permitindo trocar a versão apontada sem alterar o API Gateway. Option A: Associate different AWS Lambda functions to an API Gateway target endpoint. Correct answer(s): C.",
-          "B": "Incorrect. Versões e aliases do Lambda desacoplam o endpoint do API Gateway da versão física do código, permitindo trocar a versão apontada sem alterar o API Gateway. Option B: Create different stages in API Gateway, then associate API Gateway with AWS Lambda. Correct answer(s): C.",
-          "D": "Incorrect. Versões e aliases do Lambda desacoplam o endpoint do API Gateway da versão física do código, permitindo trocar a versão apontada sem alterar o API Gateway. Option D: Tag the AWS Lambda functions with different names. Correct answer(s): C."
+          "A": "Incorrect. Lambda versions and aliases decouple the API Gateway endpoint from the physical code version, allowing the pointed version to be changed without modifying the API Gateway. Option A: Associate different AWS Lambda functions to an API Gateway target endpoint. Correct answer(s): C.",
+          "B": "Incorrect. Lambda versions and aliases decouple the API Gateway endpoint from the physical code version, allowing the pointed version to be changed without modifying the API Gateway. Option B: Create different stages in API Gateway, then associate API Gateway with AWS Lambda. Correct answer(s): C.",
+          "D": "Incorrect. Lambda versions and aliases decouple the API Gateway endpoint from the physical code version, allowing the pointed version to be changed without modifying the API Gateway. Option D: Tag the AWS Lambda functions with different names. Correct answer(s): C."
         }
       },
       "pt": {
@@ -1655,12 +1655,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "D": "Correct. Bucket policy com deny quando `aws:SecureTransport` é `false` força o uso de HTTPS/TLS para acessar objetos no S3. Option D: Create a bucket policy that denies traffic where `SecureTransport` is `false`. Correct answer(s): D."
+          "D": "Correct. A bucket policy with deny when `aws:SecureTransport` is `false` forces the use of HTTPS/TLS to access objects in S3. Option D: Create a bucket policy that denies traffic where `SecureTransport` is `false`. Correct answer(s): D."
         },
         "wrong": {
-          "A": "Incorrect. Bucket policy com deny quando `aws:SecureTransport` é `false` força o uso de HTTPS/TLS para acessar objetos no S3. Option A: Install certificates on the EC2 instances. Correct answer(s): D.",
-          "B": "Incorrect. Bucket policy com deny quando `aws:SecureTransport` é `false` força o uso de HTTPS/TLS para acessar objetos no S3. Option B: Create a bucket policy that allows traffic where `SecureTransport` is `true`. Correct answer(s): D.",
-          "C": "Incorrect. Bucket policy com deny quando `aws:SecureTransport` é `false` força o uso de HTTPS/TLS para acessar objetos no S3. Option C: Create an HTTPS redirect on the EC2 instances. Correct answer(s): D."
+          "A": "Incorrect. A bucket policy with deny when `aws:SecureTransport` is `false` forces the use of HTTPS/TLS to access objects in S3. Option A: Install certificates on the EC2 instances. Correct answer(s): D.",
+          "B": "Incorrect. A bucket policy with deny when `aws:SecureTransport` is `false` forces the use of HTTPS/TLS to access objects in S3. Option B: Create a bucket policy that allows traffic where `SecureTransport` is `true`. Correct answer(s): D.",
+          "C": "Incorrect. A bucket policy with deny when `aws:SecureTransport` is `false` forces the use of HTTPS/TLS to access objects in S3. Option C: Create an HTTPS redirect on the EC2 instances. Correct answer(s): D."
         }
       },
       "pt": {
@@ -1705,13 +1705,13 @@
     "explanation": {
       "en": {
         "correct": {
-          "B": "Correct. Uma API RESTful pode ser implementada com EC2 atrás de Elastic Load Balancing ou de forma serverless com API Gateway e Lambda. Option B: Elastic Load Balancing; Amazon EC2. Correct answer(s): B, D.",
-          "D": "Correct. Uma API RESTful pode ser implementada com EC2 atrás de Elastic Load Balancing ou de forma serverless com API Gateway e Lambda. Option D: Amazon API Gateway; AWS Lambda. Correct answer(s): B, D."
+          "B": "Correct. A RESTful API can be implemented with EC2 behind Elastic Load Balancing or in a serverless manner with API Gateway and Lambda. Option B: Elastic Load Balancing; Amazon EC2. Correct answer(s): B, D.",
+          "D": "Correct. A RESTful API can be implemented with EC2 behind Elastic Load Balancing or in a serverless manner with API Gateway and Lambda. Option D: Amazon API Gateway; AWS Lambda. Correct answer(s): B, D."
         },
         "wrong": {
-          "A": "Incorrect. Uma API RESTful pode ser implementada com EC2 atrás de Elastic Load Balancing ou de forma serverless com API Gateway e Lambda. Option A: Amazon SQS; Amazon SNS. Correct answer(s): B, D.",
-          "C": "Incorrect. Uma API RESTful pode ser implementada com EC2 atrás de Elastic Load Balancing ou de forma serverless com API Gateway e Lambda. Option C: Amazon ElastiCache; Amazon Elacticsearch Service. Correct answer(s): B, D.",
-          "E": "Incorrect. Uma API RESTful pode ser implementada com EC2 atrás de Elastic Load Balancing ou de forma serverless com API Gateway e Lambda. Option E: Amazon S3; Amazon CloudFront. Correct answer(s): B, D."
+          "A": "Incorrect. A RESTful API can be implemented with EC2 behind Elastic Load Balancing or in a serverless manner with API Gateway and Lambda. Option A: Amazon SQS; Amazon SNS. Correct answer(s): B, D.",
+          "C": "Incorrect. A RESTful API can be implemented with EC2 behind Elastic Load Balancing or in a serverless manner with API Gateway and Lambda. Option C: Amazon ElastiCache; Amazon Elacticsearch Service. Correct answer(s): B, D.",
+          "E": "Incorrect. A RESTful API can be implemented with EC2 behind Elastic Load Balancing or in a serverless manner with API Gateway and Lambda. Option E: Amazon S3; Amazon CloudFront. Correct answer(s): B, D."
         }
       },
       "pt": {
@@ -1754,12 +1754,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "A": "Correct. O diretório `/tmp` é armazenamento temporário local disponível durante a execução da função Lambda, adequado para arquivos pequenos sem necessidade de persistência futura. Option A: the `/tmp` directory. Correct answer(s): A."
+          "A": "Correct. The `/tmp` directory is local temporary storage available during Lambda function execution, suitable for small files without the need for future persistence. Option A: the `/tmp` directory. Correct answer(s): A."
         },
         "wrong": {
-          "B": "Incorrect. O diretório `/tmp` é armazenamento temporário local disponível durante a execução da função Lambda, adequado para arquivos pequenos sem necessidade de persistência futura. Option B: Amazon EFS. Correct answer(s): A.",
-          "C": "Incorrect. O diretório `/tmp` é armazenamento temporário local disponível durante a execução da função Lambda, adequado para arquivos pequenos sem necessidade de persistência futura. Option C: Amazon EBS. Correct answer(s): A.",
-          "D": "Incorrect. O diretório `/tmp` é armazenamento temporário local disponível durante a execução da função Lambda, adequado para arquivos pequenos sem necessidade de persistência futura. Option D: Amazon S3. Correct answer(s): A."
+          "B": "Incorrect. The `/tmp` directory is local temporary storage available during Lambda function execution, suitable for small files without the need for future persistence. Option B: Amazon EFS. Correct answer(s): A.",
+          "C": "Incorrect. The `/tmp` directory is local temporary storage available during Lambda function execution, suitable for small files without the need for future persistence. Option C: Amazon EBS. Correct answer(s): A.",
+          "D": "Incorrect. The `/tmp` directory is local temporary storage available during Lambda function execution, suitable for small files without the need for future persistence. Option D: Amazon S3. Correct answer(s): A."
         }
       },
       "pt": {
@@ -1801,12 +1801,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "B": "Correct. Cache-aside com ElastiCache é eficiente para dados lidos repetidamente: a aplicação consulta o cache primeiro e carrega do banco apenas em cache miss. Option B: Create an Amazon ElastiCache cluster to cache the user profile data. Use a cache-aside caching strategy. Correct answer(s): B."
+          "B": "Correct. Cache-aside with ElastiCache is efficient for repeatedly read data: the application queries the cache first and loads from the database only on a cache miss. Option B: Create an Amazon ElastiCache cluster to cache the user profile data. Use a cache-aside caching strategy. Correct answer(s): B."
         },
         "wrong": {
-          "A": "Incorrect. Cache-aside com ElastiCache é eficiente para dados lidos repetidamente: a aplicação consulta o cache primeiro e carrega do banco apenas em cache miss. Option A: Create a new Amazon EC2 Instance and run a NoSQL database on it. Cache the profile data within this database using the write-through caching strategy. Correct answer(s): B.",
-          "C": "Incorrect. Cache-aside com ElastiCache é eficiente para dados lidos repetidamente: a aplicação consulta o cache primeiro e carrega do banco apenas em cache miss. Option C: Use a dedicated Amazon RDS instance for caching profile data. Use a write-through caching strategy. Correct answer(s): B.",
-          "D": "Incorrect. Cache-aside com ElastiCache é eficiente para dados lidos repetidamente: a aplicação consulta o cache primeiro e carrega do banco apenas em cache miss. Option D: Create an ElastiCache cluster to cache the user profile data. Use a write-through caching strategy. Correct answer(s): B."
+          "A": "Incorrect. Cache-aside with ElastiCache is efficient for repeatedly read data: the application queries the cache first and loads from the database only on a cache miss. Option A: Create a new Amazon EC2 Instance and run a NoSQL database on it. Cache the profile data within this database using the write-through caching strategy. Correct answer(s): B.",
+          "C": "Incorrect. Cache-aside with ElastiCache is efficient for repeatedly read data: the application queries the cache first and loads from the database only on a cache miss. Option C: Use a dedicated Amazon RDS instance for caching profile data. Use a write-through caching strategy. Correct answer(s): B.",
+          "D": "Incorrect. Cache-aside with ElastiCache is efficient for repeatedly read data: the application queries the cache first and loads from the database only on a cache miss. Option D: Create an ElastiCache cluster to cache the user profile data. Use a write-through caching strategy. Correct answer(s): B."
         }
       },
       "pt": {
@@ -1848,12 +1848,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "C": "Correct. Elastic Beanstalk gerencia a infraestrutura da aplicação dinâmica, incluindo provisionamento, deploy, Auto Scaling e health monitoring, enquanto a equipe mantém o código. Option C: Deploy the website code in an AWS Elastic Beanstalk environment. Use Auto Scaling to scale the numbers of instance. Correct answer(s): C."
+          "C": "Correct. Elastic Beanstalk manages the dynamic application infrastructure, including provisioning, deployment, Auto Scaling, and health monitoring, while the team maintains the code. Option C: Deploy the website code in an AWS Elastic Beanstalk environment. Use Auto Scaling to scale the numbers of instance. Correct answer(s): C."
         },
         "wrong": {
-          "A": "Incorrect. Elastic Beanstalk gerencia a infraestrutura da aplicação dinâmica, incluindo provisionamento, deploy, Auto Scaling e health monitoring, enquanto a equipe mantém o código. Option A: Use AWS VM Import to migrate a web server image to AWS Launch the image on a compute-optimized Amazon EC2 instance. Correct answer(s): C.",
-          "B": "Incorrect. Elastic Beanstalk gerencia a infraestrutura da aplicação dinâmica, incluindo provisionamento, deploy, Auto Scaling e health monitoring, enquanto a equipe mantém o código. Option B: Launch multiple Amazon Lightsail instance behind a load balancer. Set up the website on those instances. Correct answer(s): C.",
-          "D": "Incorrect. Elastic Beanstalk gerencia a infraestrutura da aplicação dinâmica, incluindo provisionamento, deploy, Auto Scaling e health monitoring, enquanto a equipe mantém o código. Option D: Use Amazon S3 to host the website. Use Amazon CloudFornt to deliver the content at scale. Correct answer(s): C."
+          "A": "Incorrect. Elastic Beanstalk manages the dynamic application infrastructure, including provisioning, deployment, Auto Scaling, and health monitoring, while the team maintains the code. Option A: Use AWS VM Import to migrate a web server image to AWS Launch the image on a compute-optimized Amazon EC2 instance. Correct answer(s): C.",
+          "B": "Incorrect. Elastic Beanstalk manages the dynamic application infrastructure, including provisioning, deployment, Auto Scaling, and health monitoring, while the team maintains the code. Option B: Launch multiple Amazon Lightsail instance behind a load balancer. Set up the website on those instances. Correct answer(s): C.",
+          "D": "Incorrect. Elastic Beanstalk manages the dynamic application infrastructure, including provisioning, deployment, Auto Scaling, and health monitoring, while the team maintains the code. Option D: Use Amazon S3 to host the website. Use Amazon CloudFornt to deliver the content at scale. Correct answer(s): C."
         }
       },
       "pt": {
@@ -1895,12 +1895,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "A": "Correct. O objeto context do Lambda contém o AWS request ID; logs escritos no console são enviados automaticamente ao CloudWatch Logs. Option A: Obtain the request identifier from the Lambda context object. Architect the application to write logs to the console. Correct answer(s): A."
+          "A": "Correct. The Lambda context object contains the AWS request ID; logs written to the console are automatically sent to CloudWatch Logs. Option A: Obtain the request identifier from the Lambda context object. Architect the application to write logs to the console. Correct answer(s): A."
         },
         "wrong": {
-          "B": "Incorrect. O objeto context do Lambda contém o AWS request ID; logs escritos no console são enviados automaticamente ao CloudWatch Logs. Option B: Obtain the request identifier from the Lambda event object. Architect the application to write logs to a file. Correct answer(s): A.",
-          "C": "Incorrect. O objeto context do Lambda contém o AWS request ID; logs escritos no console são enviados automaticamente ao CloudWatch Logs. Option C: Obtain the request identifier from the Lambda event object. Architect the application to write logs to the console. Correct answer(s): A.",
-          "D": "Incorrect. O objeto context do Lambda contém o AWS request ID; logs escritos no console são enviados automaticamente ao CloudWatch Logs. Option D: Obtain the request identifier from the Lambda context object. Architect the application to write logs to a file. Correct answer(s): A."
+          "B": "Incorrect. The Lambda context object contains the AWS request ID; logs written to the console are automatically sent to CloudWatch Logs. Option B: Obtain the request identifier from the Lambda event object. Architect the application to write logs to a file. Correct answer(s): A.",
+          "C": "Incorrect. The Lambda context object contains the AWS request ID; logs written to the console are automatically sent to CloudWatch Logs. Option C: Obtain the request identifier from the Lambda event object. Architect the application to write logs to the console. Correct answer(s): A.",
+          "D": "Incorrect. The Lambda context object contains the AWS request ID; logs written to the console are automatically sent to CloudWatch Logs. Option D: Obtain the request identifier from the Lambda context object. Architect the application to write logs to a file. Correct answer(s): A."
         }
       },
       "pt": {
@@ -1945,13 +1945,13 @@
     "explanation": {
       "en": {
         "correct": {
-          "A": "Correct. Para acesso cross-account, a role da EC2 precisa ter permissão para assumir a role na Conta A, e o código deve chamar `AssumeRole` para obter credenciais temporárias. Option A: Allow the EC2 IAM role the permission to assume the AccessPII role. Correct answer(s): A, D.",
-          "D": "Correct. Para acesso cross-account, a role da EC2 precisa ter permissão para assumir a role na Conta A, e o código deve chamar `AssumeRole` para obter credenciais temporárias. Option D: Include the `AssumeRole` API operation in the application code logic to obtain temporary credentials to access the PII table. Correct answer(s): A, D."
+          "A": "Correct. For cross-account access, the EC2 role must have permission to assume the role in Account A, and the code must call `AssumeRole` to obtain temporary credentials. Option A: Allow the EC2 IAM role the permission to assume the AccessPII role. Correct answer(s): A, D.",
+          "D": "Correct. For cross-account access, the EC2 role must have permission to assume the role in Account A, and the code must call `AssumeRole` to obtain temporary credentials. Option D: Include the `AssumeRole` API operation in the application code logic to obtain temporary credentials to access the PII table. Correct answer(s): A, D."
         },
         "wrong": {
-          "B": "Incorrect. Para acesso cross-account, a role da EC2 precisa ter permissão para assumir a role na Conta A, e o código deve chamar `AssumeRole` para obter credenciais temporárias. Option B: Allow the EC2 IAM role the permission to access the PII table. Correct answer(s): A, D.",
-          "C": "Incorrect. Para acesso cross-account, a role da EC2 precisa ter permissão para assumir a role na Conta A, e o código deve chamar `AssumeRole` para obter credenciais temporárias. Option C: Include the AWS API in the application code logic to obtain temporary credentials from the EC2 IAM role to access the PII table. Correct answer(s): A, D.",
-          "E": "Incorrect. Para acesso cross-account, a role da EC2 precisa ter permissão para assumir a role na Conta A, e o código deve chamar `AssumeRole` para obter credenciais temporárias. Option E: Include the GetSessionToken API operation in the application code logic to obtain temporary credentials to access the PII table. Correct answer(s): A, D."
+          "B": "Incorrect. For cross-account access, the EC2 role must have permission to assume the role in Account A, and the code must call `AssumeRole` to obtain temporary credentials. Option B: Allow the EC2 IAM role the permission to access the PII table. Correct answer(s): A, D.",
+          "C": "Incorrect. For cross-account access, the EC2 role must have permission to assume the role in Account A, and the code must call `AssumeRole` to obtain temporary credentials. Option C: Include the AWS API in the application code logic to obtain temporary credentials from the EC2 IAM role to access the PII table. Correct answer(s): A, D.",
+          "E": "Incorrect. For cross-account access, the EC2 role must have permission to assume the role in Account A, and the code must call `AssumeRole` to obtain temporary credentials. Option E: Include the GetSessionToken API operation in the application code logic to obtain temporary credentials to access the PII table. Correct answer(s): A, D."
         }
       },
       "pt": {
@@ -1994,12 +1994,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "D": "Correct. AWS X-Ray permite tracing distribuído e mostra duração de chamadas downstream, incluindo chamadas de API ao DynamoDB feitas pela função Lambda. Option D: Enable AWS X-Ray tracing for the function. View the traces from the X-Ray service. Correct answer(s): D."
+          "D": "Correct. AWS X-Ray enables distributed tracing and shows the duration of downstream calls, including API calls to DynamoDB made by the Lambda function. Option D: Enable AWS X-Ray tracing for the function. View the traces from the X-Ray service. Correct answer(s): D."
         },
         "wrong": {
-          "A": "Incorrect. AWS X-Ray permite tracing distribuído e mostra duração de chamadas downstream, incluindo chamadas de API ao DynamoDB feitas pela função Lambda. Option A: Add DynamoDB as an event source to the Lambda function. View the performance with Amazon CloudWatch metrics. Correct answer(s): D.",
-          "B": "Incorrect. AWS X-Ray permite tracing distribuído e mostra duração de chamadas downstream, incluindo chamadas de API ao DynamoDB feitas pela função Lambda. Option B: Place an Application Load Balancer (ALB) in front of the two DynamoDB tables. Inspect the ALB logs. Correct answer(s): D.",
-          "C": "Incorrect. AWS X-Ray permite tracing distribuído e mostra duração de chamadas downstream, incluindo chamadas de API ao DynamoDB feitas pela função Lambda. Option C: Limit Lambda to no more than five concurrent invocations Monitor from the Lambda console. Correct answer(s): D."
+          "A": "Incorrect. AWS X-Ray enables distributed tracing and shows the duration of downstream calls, including API calls to DynamoDB made by the Lambda function. Option A: Add DynamoDB as an event source to the Lambda function. View the performance with Amazon CloudWatch metrics. Correct answer(s): D.",
+          "B": "Incorrect. AWS X-Ray enables distributed tracing and shows the duration of downstream calls, including API calls to DynamoDB made by the Lambda function. Option B: Place an Application Load Balancer (ALB) in front of the two DynamoDB tables. Inspect the ALB logs. Correct answer(s): D.",
+          "C": "Incorrect. AWS X-Ray enables distributed tracing and shows the duration of downstream calls, including API calls to DynamoDB made by the Lambda function. Option C: Limit Lambda to no more than five concurrent invocations Monitor from the Lambda console. Correct answer(s): D."
         }
       },
       "pt": {
@@ -2041,12 +2041,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "B": "Correct. Read Replica separa tráfego de leitura da instância primária, reduzindo o impacto de escritas diárias nas consultas dos usuários. Option B: Create an RDS Read Replica and direct all read traffic to the replica. Correct answer(s): B."
+          "B": "Correct. Read Replica separates read traffic from the primary instance, reducing the impact of daily writes on user queries. Option B: Create an RDS Read Replica and direct all read traffic to the replica. Correct answer(s): B."
         },
         "wrong": {
-          "A": "Incorrect. Read Replica separa tráfego de leitura da instância primária, reduzindo o impacto de escritas diárias nas consultas dos usuários. Option A: Make sure Amazon RDS is Multi-AZ so it can better absorb increased traffic. Correct answer(s): B.",
-          "C": "Incorrect. Read Replica separa tráfego de leitura da instância primária, reduzindo o impacto de escritas diárias nas consultas dos usuários. Option C: Implement Amazon ElastiCache in front of Amazon RDS to buffer the write traffic. Correct answer(s): B.",
-          "D": "Incorrect. Read Replica separa tráfego de leitura da instância primária, reduzindo o impacto de escritas diárias nas consultas dos usuários. Option D: Use Amazon DynamoDB instead of Amazon RDS to buffer the read traffic. Correct answer(s): B."
+          "A": "Incorrect. Read Replica separates read traffic from the primary instance, reducing the impact of daily writes on user queries. Option A: Make sure Amazon RDS is Multi-AZ so it can better absorb increased traffic. Correct answer(s): B.",
+          "C": "Incorrect. Read Replica separates read traffic from the primary instance, reducing the impact of daily writes on user queries. Option C: Implement Amazon ElastiCache in front of Amazon RDS to buffer the write traffic. Correct answer(s): B.",
+          "D": "Incorrect. Read Replica separates read traffic from the primary instance, reducing the impact of daily writes on user queries. Option D: Use Amazon DynamoDB instead of Amazon RDS to buffer the read traffic. Correct answer(s): B."
         }
       },
       "pt": {
@@ -2088,12 +2088,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "B": "Correct. `TransactWriteItems` no DynamoDB permite operações transacionais all-or-nothing em múltiplos itens. Option B: Use the `TransactWriteitems` operation to group the changes. Update the items in the table. Correct answer(s): B."
+          "B": "Correct. `TransactWriteItems` in DynamoDB allows all-or-nothing transactional operations on multiple items. Option B: Use the `TransactWriteitems` operation to group the changes. Update the items in the table. Correct answer(s): B."
         },
         "wrong": {
-          "A": "Incorrect. `TransactWriteItems` no DynamoDB permite operações transacionais all-or-nothing em múltiplos itens. Option A: Enable transactions for the DynamoDB table. Use the `BatchWriteItem` operation to update the items. Correct answer(s): B.",
-          "C": "Incorrect. `TransactWriteItems` no DynamoDB permite operações transacionais all-or-nothing em múltiplos itens. Option C: Set up a FIFO queue using Amazon SQS. Group the changes in the queue. Update the table based on the grouped changes. Correct answer(s): B.",
-          "D": "Incorrect. `TransactWriteItems` no DynamoDB permite operações transacionais all-or-nothing em múltiplos itens. Option D: Create a transaction table in an Amazon Aurora DB cluster to manage the transactions. Write a backend process to sync the Aurora DB table and the DynamoDB table. Correct answer(s): B."
+          "A": "Incorrect. `TransactWriteItems` in DynamoDB allows all-or-nothing transactional operations on multiple items. Option A: Enable transactions for the DynamoDB table. Use the `BatchWriteItem` operation to update the items. Correct answer(s): B.",
+          "C": "Incorrect. `TransactWriteItems` in DynamoDB allows all-or-nothing transactional operations on multiple items. Option C: Set up a FIFO queue using Amazon SQS. Group the changes in the queue. Update the table based on the grouped changes. Correct answer(s): B.",
+          "D": "Incorrect. `TransactWriteItems` in DynamoDB allows all-or-nothing transactional operations on multiple items. Option D: Create a transaction table in an Amazon Aurora DB cluster to manage the transactions. Write a backend process to sync the Aurora DB table and the DynamoDB table. Correct answer(s): B."
         }
       },
       "pt": {
@@ -2135,12 +2135,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "D": "Correct. A melhor prática em EC2 é usar IAM role associada à instância para permitir chamadas `PutMetricData`, evitando credenciais estáticas na aplicação. Option D: Use the CloudWatch `PutMetricData` API call to submit a custom metric to CloudWatch. Launch the EC2 instance with the required IAM role to enable the API call. Correct answer(s): D."
+          "D": "Correct. The best practice on EC2 is to use an IAM role associated with the instance to allow `PutMetricData` calls, avoiding static credentials in the application. Option D: Use the CloudWatch `PutMetricData` API call to submit a custom metric to CloudWatch. Launch the EC2 instance with the required IAM role to enable the API call. Correct answer(s): D."
         },
         "wrong": {
-          "A": "Incorrect. A melhor prática em EC2 é usar IAM role associada à instância para permitir chamadas `PutMetricData`, evitando credenciais estáticas na aplicação. Option A: Use the PUT Object API call to send data to an S3 bucket. Use an event notification to invoke a Lambda function to publish data to CloudWatch. Correct answer(s): D.",
-          "B": "Incorrect. A melhor prática em EC2 é usar IAM role associada à instância para permitir chamadas `PutMetricData`, evitando credenciais estáticas na aplicação. Option B: Publish the metric data to an Amazon Kinesis Stream using a `PutRecord` API call. Subscribe a Lambda function that publishes data to CloudWatch. Correct answer(s): D.",
-          "C": "Incorrect. A melhor prática em EC2 é usar IAM role associada à instância para permitir chamadas `PutMetricData`, evitando credenciais estáticas na aplicação. Option C: Use the CloudWatch `PutMetricData` API call to submit a custom metric to CloudWatch. Provide the required credentials to enable the API call. Correct answer(s): D."
+          "A": "Incorrect. The best practice on EC2 is to use an IAM role associated with the instance to allow `PutMetricData` calls, avoiding static credentials in the application. Option A: Use the PUT Object API call to send data to an S3 bucket. Use an event notification to invoke a Lambda function to publish data to CloudWatch. Correct answer(s): D.",
+          "B": "Incorrect. The best practice on EC2 is to use an IAM role associated with the instance to allow `PutMetricData` calls, avoiding static credentials in the application. Option B: Publish the metric data to an Amazon Kinesis Stream using a `PutRecord` API call. Subscribe a Lambda function that publishes data to CloudWatch. Correct answer(s): D.",
+          "C": "Incorrect. The best practice on EC2 is to use an IAM role associated with the instance to allow `PutMetricData` calls, avoiding static credentials in the application. Option C: Use the CloudWatch `PutMetricData` API call to submit a custom metric to CloudWatch. Provide the required credentials to enable the API call. Correct answer(s): D."
         }
       },
       "pt": {
@@ -2182,12 +2182,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "B": "Correct. SQS tem limite de tamanho de mensagem; a Extended Client Library usa S3 para armazenar payloads grandes e deixa ponteiros na fila SQS. Option B: Use Amazon S3 and the Amazon SQS Extended Client Library for Java. Correct answer(s): B."
+          "B": "Correct. SQS has a message size limit; the Extended Client Library uses S3 to store large payloads and leaves pointers in the SQS queue. Option B: Use Amazon S3 and the Amazon SQS Extended Client Library for Java. Correct answer(s): B."
         },
         "wrong": {
-          "A": "Incorrect. SQS tem limite de tamanho de mensagem; a Extended Client Library usa S3 para armazenar payloads grandes e deixa ponteiros na fila SQS. Option A: Use Amazon S3 and the Amazon SQS CLI. Correct answer(s): B.",
-          "C": "Incorrect. SQS tem limite de tamanho de mensagem; a Extended Client Library usa S3 para armazenar payloads grandes e deixa ponteiros na fila SQS. Option C: Use Amazon EBS and the Amazon SQS CLI. Correct answer(s): B.",
-          "D": "Incorrect. SQS tem limite de tamanho de mensagem; a Extended Client Library usa S3 para armazenar payloads grandes e deixa ponteiros na fila SQS. Option D: Use Amazon EFS and the Amazon SQS CLI. Correct answer(s): B."
+          "A": "Incorrect. SQS has a message size limit; the Extended Client Library uses S3 to store large payloads and leaves pointers in the SQS queue. Option A: Use Amazon S3 and the Amazon SQS CLI. Correct answer(s): B.",
+          "C": "Incorrect. SQS has a message size limit; the Extended Client Library uses S3 to store large payloads and leaves pointers in the SQS queue. Option C: Use Amazon EBS and the Amazon SQS CLI. Correct answer(s): B.",
+          "D": "Incorrect. SQS has a message size limit; the Extended Client Library uses S3 to store large payloads and leaves pointers in the SQS queue. Option D: Use Amazon EFS and the Amazon SQS CLI. Correct answer(s): B."
         }
       },
       "pt": {
@@ -2229,12 +2229,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "B": "Correct. Métricas customizadas do CloudWatch são apropriadas para acompanhar séries temporais como número de threads e gerar gráficos/alarmes. Option B: Create a custom Amazon CloudWatch metric and periodically perform a `PutMetricData` call with the current thread count. Correct answer(s): B."
+          "B": "Correct. CloudWatch custom metrics are appropriate for tracking time series such as thread counts and for generating graphs/alarms. Option B: Create a custom Amazon CloudWatch metric and periodically perform a `PutMetricData` call with the current thread count. Correct answer(s): B."
         },
         "wrong": {
-          "A": "Incorrect. Métricas customizadas do CloudWatch são apropriadas para acompanhar séries temporais como número de threads e gerar gráficos/alarmes. Option A: Periodically send the thread count to AWS X-Ray segments, then generate a service graph on demand. Correct answer(s): B.",
-          "C": "Incorrect. Métricas customizadas do CloudWatch são apropriadas para acompanhar séries temporais como número de threads e gerar gráficos/alarmes. Option C: Periodically log thread count data to Amazon S3. Use Amazon Kinesis to process the data into a graph. Correct answer(s): B.",
-          "D": "Incorrect. Métricas customizadas do CloudWatch são apropriadas para acompanhar séries temporais como número de threads e gerar gráficos/alarmes. Option D: Periodically write the current thread count to a table using Amazon DynarnoDB and use Amazon CloudFront to create a graph. Correct answer(s): B."
+          "A": "Incorrect. CloudWatch custom metrics are appropriate for tracking time series such as thread counts and for generating graphs/alarms. Option A: Periodically send the thread count to AWS X-Ray segments, then generate a service graph on demand. Correct answer(s): B.",
+          "C": "Incorrect. CloudWatch custom metrics are appropriate for tracking time series such as thread counts and for generating graphs/alarms. Option C: Periodically log thread count data to Amazon S3. Use Amazon Kinesis to process the data into a graph. Correct answer(s): B.",
+          "D": "Incorrect. CloudWatch custom metrics are appropriate for tracking time series such as thread counts and for generating graphs/alarms. Option D: Periodically write the current thread count to a table using Amazon DynarnoDB and use Amazon CloudFront to create a graph. Correct answer(s): B."
         }
       },
       "pt": {
@@ -2276,12 +2276,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "D": "Correct. Para erros de APIs de terceiros, a aplicação deve publicar uma métrica customizada no CloudWatch e usar SNS para notificação por alarmes. Option D: Publish a custom metric on Amazon CloudWatch and use Amazon SNS for notification. Correct answer(s): D."
+          "D": "Correct. For third-party API errors, the application should publish a custom metric in CloudWatch and use SNS for alarm notifications. Option D: Publish a custom metric on Amazon CloudWatch and use Amazon SNS for notification. Correct answer(s): D."
         },
         "wrong": {
-          "A": "Incorrect. Para erros de APIs de terceiros, a aplicação deve publicar uma métrica customizada no CloudWatch e usar SNS para notificação por alarmes. Option A: Publish a custom metric on Amazon CloudWatch and use Amazon Simple Email Service (SES) for notification. Correct answer(s): D.",
-          "B": "Incorrect. Para erros de APIs de terceiros, a aplicação deve publicar uma métrica customizada no CloudWatch e usar SNS para notificação por alarmes. Option B: Use an Amazon CloudWatch API-error metric and use Amazon Simple Notification Service (SNS) for notification. Correct answer(s): D.",
-          "C": "Incorrect. Para erros de APIs de terceiros, a aplicação deve publicar uma métrica customizada no CloudWatch e usar SNS para notificação por alarmes. Option C: Use an Amazon CloudWatch API-error metric and use Amazon SES for notification. Correct answer(s): D."
+          "A": "Incorrect. For third-party API errors, the application should publish a custom metric in CloudWatch and use SNS for alarm notifications. Option A: Publish a custom metric on Amazon CloudWatch and use Amazon Simple Email Service (SES) for notification. Correct answer(s): D.",
+          "B": "Incorrect. For third-party API errors, the application should publish a custom metric in CloudWatch and use SNS for alarm notifications. Option B: Use an Amazon CloudWatch API-error metric and use Amazon Simple Notification Service (SNS) for notification. Correct answer(s): D.",
+          "C": "Incorrect. For third-party API errors, the application should publish a custom metric in CloudWatch and use SNS for alarm notifications. Option C: Use an Amazon CloudWatch API-error metric and use Amazon SES for notification. Correct answer(s): D."
         }
       },
       "pt": {
@@ -2323,12 +2323,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "B": "Correct. CodePipeline oferece approval actions como etapa manual dentro de um stage antes do deploy em produção. Option B: Use an approval action in a stage. Correct answer(s): B."
+          "B": "Correct. CodePipeline offers approval actions as a manual step within a stage before deploying to production. Option B: Use an approval action in a stage. Correct answer(s): B."
         },
         "wrong": {
-          "A": "Incorrect. CodePipeline oferece approval actions como etapa manual dentro de um stage antes do deploy em produção. Option A: Use multiple pipelines to allow approval. Correct answer(s): B.",
-          "C": "Incorrect. CodePipeline oferece approval actions como etapa manual dentro de um stage antes do deploy em produção. Option C: Disable the stage transition to allow manual approval. Correct answer(s): B.",
-          "D": "Incorrect. CodePipeline oferece approval actions como etapa manual dentro de um stage antes do deploy em produção. Option D: Disable a stage just prior the deployment stage. Correct answer(s): B."
+          "A": "Incorrect. CodePipeline offers approval actions as a manual step within a stage before deploying to production. Option A: Use multiple pipelines to allow approval. Correct answer(s): B.",
+          "C": "Incorrect. CodePipeline offers approval actions as a manual step within a stage before deploying to production. Option C: Disable the stage transition to allow manual approval. Correct answer(s): B.",
+          "D": "Incorrect. CodePipeline offers approval actions as a manual step within a stage before deploying to production. Option D: Disable a stage just prior the deployment stage. Correct answer(s): B."
         }
       },
       "pt": {
@@ -2370,12 +2370,12 @@
     "explanation": {
       "en": {
         "correct": {
-          "A": "Correct. ElastiCache for Redis em Cluster Mode oferece alta disponibilidade e distribuição; Memcached não possui os mesmos recursos de persistência/replicação do Redis gerenciado. Option A: Implement Amazon ElastiCache Redis in Cluster Mode. Correct answer(s): A."
+          "A": "Correct. ElastiCache for Redis in Cluster Mode offers high availability and distribution; Memcached does not have the same persistence/replication features as managed Redis. Option A: Implement Amazon ElastiCache Redis in Cluster Mode. Correct answer(s): A."
         },
         "wrong": {
-          "B": "Incorrect. ElastiCache for Redis em Cluster Mode oferece alta disponibilidade e distribuição; Memcached não possui os mesmos recursos de persistência/replicação do Redis gerenciado. Option B: Install Redis on an Amazon EC2 instance. Correct answer(s): A.",
-          "C": "Incorrect. ElastiCache for Redis em Cluster Mode oferece alta disponibilidade e distribuição; Memcached não possui os mesmos recursos de persistência/replicação do Redis gerenciado. Option C: Implement Amazon ElastiCache Memcached. Correct answer(s): A.",
-          "D": "Incorrect. ElastiCache for Redis em Cluster Mode oferece alta disponibilidade e distribuição; Memcached não possui os mesmos recursos de persistência/replicação do Redis gerenciado. Option D: Migrate the database to Amazon Redshift. Correct answer(s): A."
+          "B": "Incorrect. ElastiCache for Redis in Cluster Mode offers high availability and distribution; Memcached does not have the same persistence/replication features as managed Redis. Option B: Install Redis on an Amazon EC2 instance. Correct answer(s): A.",
+          "C": "Incorrect. ElastiCache for Redis in Cluster Mode offers high availability and distribution; Memcached does not have the same persistence/replication features as managed Redis. Option C: Implement Amazon ElastiCache Memcached. Correct answer(s): A.",
+          "D": "Incorrect. ElastiCache for Redis in Cluster Mode offers high availability and distribution; Memcached does not have the same persistence/replication features as managed Redis. Option D: Migrate the database to Amazon Redshift. Correct answer(s): A."
         }
       },
       "pt": {

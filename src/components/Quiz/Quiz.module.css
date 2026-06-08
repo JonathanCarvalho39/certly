@@ -17,6 +17,16 @@
   gap: 0.75rem;
 }
 
+.headerActions {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.mobileActions {
+  display: none;
+}
+
 .exitBtn {
   font-family: 'Space Mono', monospace;
   font-size: 0.7rem;
@@ -332,6 +342,17 @@
     gap: 0.5rem;
   }
 
+  .headerActions {
+    display: none;
+  }
+
+  .mobileActions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
   .progressWrap {
     order: 10;
     width: 100%;
@@ -339,8 +360,21 @@
   }
 
   .footerInner {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
+  }
+
+  .footerInner > button {
+    flex: 1;
+    margin-left: 0;
+  }
+
+  .footerRight {
+    flex: 1;
+  }
+
+  .footerRight > button {
+    width: 100%;
   }
 
   .examRow1 .navBtn,

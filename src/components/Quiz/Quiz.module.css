@@ -153,6 +153,21 @@
   gap: 0.5rem;
 }
 
+.footerRight > button {
+  white-space: nowrap;
+}
+
+.practiceRow1 {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.practiceRow1 > button {
+  flex: 1;
+  min-width: 0;
+}
+
 .navBtn {
   font-family: 'Space Mono', monospace;
   font-size: 0.8rem;
@@ -360,7 +375,7 @@
   }
 
   .footerInner {
-    flex-direction: row;
+    flex-direction: column;
     gap: 0.5rem;
   }
 
@@ -369,12 +384,24 @@
     margin-left: 0;
   }
 
+  .practiceRow1 {
+    width: 100%;
+  }
+
+  .practiceRow1 > button {
+    font-size: 0.7rem;
+    padding: 0.6rem 0.5rem;
+  }
+
   .footerRight {
     flex: 1;
+    display: flex;
+    gap: 0.5rem;
   }
 
   .footerRight > button {
-    width: 100%;
+    flex: 1;
+    min-width: 0;
   }
 
   .examRow1 .navBtn,

@@ -132,16 +132,16 @@ export default function Quiz() {
         <div className={styles.progressWrap}>
           <ProgressBar current={currentIndex + 1} total={questions.length} />
         </div>
-        {isExam && (
-          <div className={styles.headerActions}>
-            <button className={styles.navBtnFull} onClick={() => setShowNavModal(true)}>
-              {t.showNav}
-            </button>
+        <div className={styles.headerActions}>
+          <button className={styles.navBtnFull} onClick={() => setShowNavModal(true)}>
+            {t.showNav}
+          </button>
+          {isExam && (
             <button className={styles.finishBtnFull} onClick={finishQuiz}>
               {t.finishExam}
             </button>
-          </div>
-        )}
+          )}
+        </div>
       </header>
 
       <div className={styles.body}>
@@ -201,10 +201,10 @@ export default function Quiz() {
             </>
           ) : (
             <>
-              <button className={styles.navBtn} onClick={handlePrev} disabled={currentIndex === 0}>
-                {t.prev}
-              </button>
-              <div className={styles.footerRight}>
+              <div className={styles.practiceRow1}>
+                <button className={styles.navBtn} onClick={handlePrev} disabled={currentIndex === 0}>
+                  {t.prev}
+                </button>
                 {!confirmed ? (
                   <button className={styles.confirmBtn} onClick={handleConfirm} disabled={selected.length === 0}>
                     {t.confirm}
@@ -219,6 +219,9 @@ export default function Quiz() {
                   </button>
                 )}
               </div>
+              <button className={styles.navBtnFull} onClick={() => setShowNavModal(true)}>
+                {t.showNav}
+              </button>
             </>
           )}
         </div>

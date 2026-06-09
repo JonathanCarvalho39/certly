@@ -268,9 +268,11 @@ function TopicRow({ topic, t }: { topic: TopicAnalysis; t: Record<string, string
       <span className={`${styles.tdConf} ${styles[CONFIDENCE_META[topic.confidence].cssClass]}`}>
         {t[`conf_${topic.confidence}` as keyof typeof t]}
       </span>
-      <span className={`${styles.tdStatus} ${styles[sm.cssClass]}`}>
-        {topic.status !== 'low_sample_error' ? t[`status_${topic.status}` as keyof typeof t] : ''}
-      </span>
+      {topic.status !== 'low_sample_error' && (
+        <span className={`${styles.tdStatus} ${styles[sm.cssClass]}`}>
+          {t[`status_${topic.status}` as keyof typeof t]}
+        </span>
+      )}
     </div>
   );
 }

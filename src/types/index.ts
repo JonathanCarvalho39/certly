@@ -26,6 +26,7 @@ export interface Question {
     en: ExplanationLang;
     pt: ExplanationLang;
   };
+  group: string;
 }
 
 export interface Answer {
@@ -40,6 +41,7 @@ export interface SessionConfig {
   questionCount: number;
   timeLimit: number;
   showTimer: boolean;
+  selectedGroups: string[];
 }
 
 export interface AppState {

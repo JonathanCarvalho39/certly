@@ -290,9 +290,7 @@
   font-family: 'Space Mono', monospace;
   font-size: 0.75rem;
   color: var(--text);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-break: break-word;
 }
 
 .tdCorrect { color: var(--green); font-family: 'Space Mono', monospace; font-size: 0.75rem; }

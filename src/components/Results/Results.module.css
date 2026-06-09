@@ -3,17 +3,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 3rem 1.5rem;
+  padding: 3rem 1.5rem 5rem;
   gap: 1.5rem;
   animation: fadeUp 0.4s ease;
 }
 
 .topBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
   z-index: 110;
+  background: var(--bg);
+}
+
+.exportArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 520px;
 }
 
 .title {
@@ -69,13 +84,8 @@
   color: var(--green);
 }
 
-.wrongVal {
-  color: var(--red);
-}
-
-.skippedVal {
-  color: var(--text-mut);
-}
+.wrongVal { color: var(--red); }
+.skippedVal { color: var(--text-mut); }
 
 .statLabel {
   font-family: 'Space Mono', monospace;
@@ -85,16 +95,293 @@
   color: var(--text-dim);
 }
 
-.actions {
+/* Diagnostic Card */
+.diagnosticCard {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--amber);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.diagnosticTitle {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--amber);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.diagnosticText {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+/* Section Titles */
+.sectionTitle {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+}
+
+.sectionDesc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  text-align: center;
+  margin-top: -0.5rem;
+}
+
+/* Category Sections */
+.categorySection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Topic Card */
+.topicCard {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.tcHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tcName {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.tcStats {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.tcBar {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--border);
+  overflow: hidden;
+}
+
+.tcBarFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.6s ease-out;
+}
+
+.tcMetrics {
   display: flex;
   gap: 1rem;
-  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.tcMetric {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+}
+
+.tcMetric strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.tcMeta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.statusBadge,
+.confBadge {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.6rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+/* Status colors */
+.statusHigh { background: rgba(239, 68, 68, 0.15); color: var(--red); border: 1px solid rgba(239, 68, 68, 0.3); }
+.statusLowSample { background: rgba(245, 158, 11, 0.15); color: var(--amber); border: 1px solid rgba(245, 158, 11, 0.3); }
+.statusGoodStart { background: rgba(16, 185, 129, 0.1); color: var(--green); border: 1px solid rgba(16, 185, 129, 0.2); }
+.statusMastered { background: rgba(16, 185, 129, 0.15); color: var(--green); border: 1px solid rgba(16, 185, 129, 0.3); }
+.statusNeutral { background: var(--surface); color: var(--text-dim); border: 1px solid var(--border); }
+
+.confHigh { background: rgba(16, 185, 129, 0.08); color: var(--green); border: 1px solid rgba(16, 185, 129, 0.15); }
+.confMed { background: rgba(245, 158, 11, 0.08); color: var(--amber); border: 1px solid rgba(245, 158, 11, 0.15); }
+.confLow { background: var(--surface); color: var(--text-dim); border: 1px solid var(--border); }
+
+/* All Topics Table */
+.allTopicsSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.topicsTable {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 1.2fr 0.7fr 0.5fr 0.5fr 0.6fr 0.7fr 1fr;
+  gap: 0.25rem;
+  padding: 0.6rem 0.75rem;
+  background: var(--border);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.55rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-dim);
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 1.2fr 0.7fr 0.5fr 0.5fr 0.6fr 0.7fr 1fr;
+  gap: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}
+
+.tableRow:last-child {
+  border-bottom: none;
+}
+
+.tdTopic {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tdCorrect { color: var(--green); }
+.tdWrong { color: var(--red); }
+.tdPct { font-family: 'Space Mono', monospace; font-size: 0.65rem; }
+.tdError { font-family: 'Space Mono', monospace; font-size: 0.65rem; }
+
+.tdConf,
+.tdStatus {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.55rem;
+  padding: 0.15rem 0.35rem;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Bar Colors */
+.barGood { background: var(--green); }
+.barWarn { background: var(--amber); }
+.barBad { background: var(--red); }
+
+/* Next Steps */
+.nextStepsSection {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.nextStepsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.nextStep {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.stepNumber {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--amber);
+  background: var(--amber-dim);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.stepText {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+/* Actions */
+.actions {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  z-index: 100;
 }
 
 .homeBtn,
-.retryBtn {
+.retryBtn,
+.exportBtn {
   font-family: 'Space Mono', monospace;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   padding: 0.6rem 1.25rem;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
@@ -102,10 +389,14 @@
   color: var(--text-dim);
   cursor: pointer;
   transition: all 0.2s;
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
 }
 
 .homeBtn:hover,
-.retryBtn:hover {
+.retryBtn:hover,
+.exportBtn:hover {
   border-color: var(--amber);
   color: var(--text);
 }
@@ -116,6 +407,37 @@
   border-color: var(--amber);
 }
 
-.retryBtn:hover {
-  background: #d97706;
+.retryBtn:hover { background: #d97706; }
+
+.exportBtn {
+  border-color: var(--green);
+  color: var(--green);
+}
+
+.exportBtn:hover {
+  background: var(--green-dim);
+  border-color: var(--green);
+}
+
+@media (max-width: 480px) {
+  .actions {
+    flex-direction: row;
+    padding: 0.6rem 1rem;
+  }
+
+  .homeBtn,
+  .retryBtn,
+  .exportBtn {
+    flex: 1;
+    max-width: none;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.65rem;
+  }
+
+  .tableHeader,
+  .tableRow {
+    grid-template-columns: 1fr 0.6fr 0.4fr 0.5fr 0.5fr 0.6fr 0.9fr;
+    font-size: 0.5rem;
+  }
 }

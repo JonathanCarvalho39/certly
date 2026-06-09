@@ -12,7 +12,7 @@ import styles from './Results.module.css';
 const STATUS_META: Record<TopicStatus, { cssClass: string; color: string }> = {
   high_priority: { cssClass: 'statusHigh', color: 'var(--red)' },
   low_sample_error: { cssClass: 'statusLowSample', color: 'var(--amber)' },
-  good_start: { cssClass: 'statusGoodStart', color: 'var(--green)' },
+  good_start: { cssClass: 'statusMastered', color: 'var(--green)' },
   likely_mastered: { cssClass: 'statusMastered', color: 'var(--green)' },
   neutral: { cssClass: 'statusNeutral', color: 'var(--text-dim)' },
 };
@@ -186,11 +186,7 @@ export default function Results() {
               </span>
               <span className={styles.legendItem}>
                 <span className={styles.legendDot} style={{ background: 'var(--amber)' }} />
-                {t.status_low_sample_error}
-              </span>
-              <span className={styles.legendItem}>
-                <span className={styles.legendDot} style={{ background: 'var(--green)' }} />
-                {t.status_good_start}
+                {t.conf_low}
               </span>
               <span className={styles.legendItem}>
                 <span className={styles.legendDot} style={{ background: 'var(--green)' }} />

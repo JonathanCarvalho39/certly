@@ -5,7 +5,7 @@ import { shuffle } from '../utils/shuffle';
 
 const defaultConfig: SessionConfig = {
   mode: 'exam',
-  lang: 'en',
+  lang: 'pt',
   questionCount: 65,
   timeLimit: 7800,
   showTimer: true,

@@ -359,7 +359,7 @@
   inset: 0;
   background: rgba(0, 0, 0, 0.7);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   z-index: 100;
   padding: 1rem;
@@ -514,7 +514,6 @@
   .modal {
     max-width: 100%;
     max-height: 85vh;
-    margin-top: 3rem;
   }
 
   .modalHeader {

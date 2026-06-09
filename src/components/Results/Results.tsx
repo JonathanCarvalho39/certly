@@ -280,7 +280,12 @@ function TopicRow({ topic, t }: { topic: TopicAnalysis; t: Record<string, string
       <span className={styles.tdWrong}>{topic.wrong}</span>
       <span className={styles.tdPct}>{topic.percentage}%</span>
       <span className={styles.tdError}>{topic.errorRate}%</span>
-      <span className={styles.tdDot} style={{ background: sm.color }} title={t[`status_${topic.status}` as keyof typeof t]} />
+      <span className={styles.tdDots}>
+        <span className={styles.tdDot} style={{ background: sm.color }} title={t[`status_${topic.status}` as keyof typeof t]} />
+        {topic.confidence === 'low' && (
+          <span className={styles.tdDot} style={{ background: 'var(--amber)' }} title={t.conf_low} />
+        )}
+      </span>
     </div>
   );
 }

@@ -314,6 +314,11 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
+}
+
+.tdDots {
+  display: flex;
+  gap: 4px;
   justify-self: center;
 }
 

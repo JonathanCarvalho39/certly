@@ -9,6 +9,7 @@ const defaultConfig: SessionConfig = {
   questionCount: 65,
   timeLimit: 7800,
   showTimer: true,
+  selectedGroups: [],
 };
 
 const initialState: AppState = {
@@ -33,7 +34,11 @@ function appReducer(state: AppState, action: AppAction): AppState {
       return { ...state, config: { ...state.config, ...action.payload } };
 
     case 'START_QUIZ': {
-      const shuffled = shuffle(state.allQuestions);
+      const { selectedGroups } = state.config;
+      const pool = selectedGroups.length > 0
+        ? state.allQuestions.filter((q) => selectedGroups.includes(q.group))
+        : state.allQuestions;
+      const shuffled = shuffle(pool);
       const count = Math.min(state.config.questionCount, shuffled.length);
       const sliced = shuffled.slice(0, count);
       return {

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { useApp } from '../../context/AppContext';
 import { UI } from '../../i18n/ui';
 import LangToggle from '../ui/LangToggle';
@@ -12,6 +12,26 @@ export default function Config() {
   const t = UI[config.lang];
   const isExam = config.mode === 'exam';
   const [showInfoModal, setShowInfoModal] = useState(false);
+
+  const groups = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const q of state.allQuestions) {
+      map.set(q.group, (map.get(q.group) ?? 0) + 1);
+    }
+    return Array.from(map.entries()).sort((a, b) => b[1] - a[1]);
+  }, [state.allQuestions]);
+
+  const toggleGroup = (group: string) => {
+    const current = config.selectedGroups;
+    const next = current.includes(group)
+      ? current.filter((g) => g !== group)
+      : [...current, group];
+    dispatch({ type: 'SET_CONFIG', payload: { selectedGroups: next } });
+  };
+
+  const clearGroups = () => {
+    dispatch({ type: 'SET_CONFIG', payload: { selectedGroups: [] } });
+  };
 
   const start = () => {
     dispatch({ type: 'START_QUIZ' });
@@ -63,20 +83,65 @@ export default function Config() {
       )}
 
       {!isExam && (
-        <div className={styles.section}>
-          <label className={styles.label}>{t.numQuestions}</label>
-          <div className={styles.options}>
-            {PRACTICE_COUNTS.map((n) => (
-              <button
-                key={n}
-                className={`${styles.optionBtn} ${config.questionCount === n ? styles.active : ''}`}
-                onClick={() => dispatch({ type: 'SET_CONFIG', payload: { questionCount: n } })}
-              >
-                {n}
-              </button>
-            ))}
+        <>
+          <div className={styles.section}>
+            <label className={styles.label}>{t.numQuestions}</label>
+            <div className={styles.options}>
+              {PRACTICE_COUNTS.map((n) => (
+                <button
+                  key={n}
+                  className={`${styles.optionBtn} ${config.questionCount === n ? styles.active : ''}`}
+                  onClick={() => dispatch({ type: 'SET_CONFIG', payload: { questionCount: n } })}
+                >
+                  {n}
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
+
+          <div className={styles.section}>
+            <div className={styles.labelRow}>
+              <label className={styles.label}>{t.groupFilter}</label>
+              {config.selectedGroups.length > 0 && (
+                <button className={styles.clearBtn} onClick={clearGroups}>
+                  {t.clearGroups}
+                </button>
+              )}
+            </div>
+            <p className={styles.groupDesc}>{t.groupFilterDesc}</p>
+            <select
+              className={styles.groupSelect}
+              value=""
+              onChange={(e) => {
+                if (e.target.value) toggleGroup(e.target.value);
+              }}
+            >
+              <option value="" disabled>{t.selectGroup}</option>
+              {groups
+                .filter(([group]) => !config.selectedGroups.includes(group))
+                .map(([group, count]) => (
+                  <option key={group} value={group}>
+                    {group} ({count})
+                  </option>
+                ))}
+            </select>
+            {config.selectedGroups.length > 0 && (
+              <div className={styles.tags}>
+                {config.selectedGroups.map((group) => {
+                  const entry = groups.find(([g]) => g === group);
+                  const count = entry?.[1] ?? 0;
+                  return (
+                    <span key={group} className={styles.tag}>
+                      <span className={styles.tagName}>{group}</span>
+                      <span className={styles.tagCount}>{count}</span>
+                      <button className={styles.tagRemove} onClick={() => toggleGroup(group)}>✕</button>
+                    </span>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        </>
       )}
 
       <button className={styles.startBtn} onClick={handleStartClick}>

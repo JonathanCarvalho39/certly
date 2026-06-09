@@ -19,7 +19,7 @@ const initialState: AppState = {
   allQuestions: [],
   currentIndex: 0,
   answers: {},
-  quizLang: 'en',
+  quizLang: 'pt',
 };
 
 function appReducer(state: AppState, action: AppAction): AppState {

@@ -47,36 +47,6 @@ export default function Results() {
     [stats],
   );
 
-  const diagnosticText = useMemo(() => {
-    const sentences: string[] = [];
-    const highImpact = highPriorityTopics.filter((t) => t.impactScore >= 0.2);
-    const zeroPercent = lowSampleTopics;
-
-    if (highImpact.length > 0) {
-      const names = highImpact.map((t) => t.group).join(', ');
-      const totalErrors = highImpact.reduce((sum, t) => sum + t.wrong, 0);
-      sentences.push(
-        `${names} ${config.lang === 'pt' ? 'teve' : 'had'} the biggest impact, ${config.lang === 'pt' ? 'concentrando' : 'concentrating'} ${totalErrors} ${config.lang === 'pt' ? 'dos' : 'of'} ${stats.totalWrong} ${config.lang === 'pt' ? 'erros' : 'errors'}.`,
-      );
-    }
-
-    if (zeroPercent.length > 0) {
-      const names = zeroPercent.map((t) => t.group).join(', ');
-      sentences.push(
-        `${names} ${config.lang === 'pt' ? 'tiveram' : 'had'} 0% ${config.lang === 'pt' ? 'de acerto, mas com apenas' : 'accuracy but with only'} ${zeroPercent.map((t) => `${t.answered} ${config.lang === 'pt' ? 'questão(ões)' : 'question(s)'}`).join(config.lang === 'pt' ? ' e ' : ' and ')}, ${config.lang === 'pt' ? 'então precisam de mais amostra' : 'so they need more sample'}.`,
-      );
-    }
-
-    if (goodStartTopics.length > 0) {
-      const names = goodStartTopics.map((t) => t.group).join(', ');
-      sentences.push(
-        `${names} ${config.lang === 'pt' ? 'teve' : 'had'} good initial performance, ${config.lang === 'pt' ? 'mas ainda não pode ser considerado dominado' : 'but cannot be considered mastered yet'}.`,
-      );
-    }
-
-    return sentences;
-  }, [highPriorityTopics, lowSampleTopics, goodStartTopics, stats.totalWrong, config.lang]);
-
   const nextSteps = useMemo(() => {
     const steps: string[] = [];
     if (highPriorityTopics.length > 0) {
@@ -157,16 +127,6 @@ export default function Results() {
             <span className={styles.statLabel}>{t.skipped}</span>
           </div>
         </div>
-
-        {/* Diagnostic Card */}
-        {diagnosticText.length > 0 && (
-          <div className={styles.diagnosticCard}>
-            <h3 className={styles.diagnosticTitle}>{t.diagnosticTitle}</h3>
-            {diagnosticText.map((text, i) => (
-              <p key={i} className={styles.diagnosticText}>{text}</p>
-            ))}
-          </div>
-        )}
 
         {/* High Priority */}
         {highPriorityTopics.length > 0 && (

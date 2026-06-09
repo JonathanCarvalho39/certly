@@ -66,4 +66,5 @@ export type AppAction =
   | { type: 'NEXT_QUESTION' }
   | { type: 'PREV_QUESTION' }
   | { type: 'SET_QUIZ_LANG'; payload: Lang }
-  | { type: 'FINISH' };
+  | { type: 'FINISH' }
+  | { type: 'RETRY_QUIZ' };

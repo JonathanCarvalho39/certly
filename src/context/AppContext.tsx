@@ -51,6 +51,18 @@ function appReducer(state: AppState, action: AppAction): AppState {
       };
     }
 
+    case 'RETRY_QUIZ': {
+      const shuffled = shuffle([...state.questions]);
+      return {
+        ...state,
+        questions: shuffled,
+        currentIndex: 0,
+        answers: {},
+        quizLang: state.config.lang,
+        screen: 'quiz',
+      };
+    }
+
     case 'SET_ANSWER':
       return {
         ...state,

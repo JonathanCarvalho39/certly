@@ -1,4 +1,4 @@
-import { useMemo, useRef, useCallback } from 'react';
+import { useMemo, useRef, useCallback, useState } from 'react';
 import { toPng } from 'html-to-image';
 import { useApp } from '../../context/AppContext';
 import { UI } from '../../i18n/ui';
@@ -86,7 +86,18 @@ export default function Results() {
     }
   }, []);
 
-  const retry = () => dispatch({ type: 'START_QUIZ' });
+  const [showRetryModal, setShowRetryModal] = useState(false);
+
+  const retrySame = () => {
+    setShowRetryModal(false);
+    dispatch({ type: 'RETRY_QUIZ' });
+  };
+
+  const retryNew = () => {
+    setShowRetryModal(false);
+    dispatch({ type: 'START_QUIZ' });
+  };
+
   const goHome = () => dispatch({ type: 'GO_TO', payload: 'welcome' });
 
   return (
@@ -217,11 +228,30 @@ export default function Results() {
 
       <div className={styles.actions}>
         <button className={styles.homeBtn} onClick={goHome}>{t.backHome}</button>
-        <button className={styles.retryBtn} onClick={retry}>{t.tryAgain}</button>
+        <button className={styles.retryBtn} onClick={() => setShowRetryModal(true)}>{t.tryAgain}</button>
         <button className={styles.exportBtn} onClick={handleExport}>
           ↓ {t.exportResult}
         </button>
       </div>
+
+      {showRetryModal && (
+        <div className={styles.overlay} onClick={() => setShowRetryModal(false)}>
+          <div className={styles.retryModal} onClick={(e) => e.stopPropagation()}>
+            <h3 className={styles.retryTitle}>{t.retryTitle}</h3>
+            <div className={styles.retryOptions}>
+              <button className={styles.retryOption} onClick={retrySame}>
+                {t.retrySame}
+              </button>
+              <button className={styles.retryOption} onClick={retryNew}>
+                {t.retryNew}
+              </button>
+            </div>
+            <button className={styles.retryCancel} onClick={() => setShowRetryModal(false)}>
+              {t.retryCancel}
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

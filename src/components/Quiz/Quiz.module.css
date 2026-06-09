@@ -141,6 +141,10 @@
   margin-left: auto;
 }
 
+.footerInner > .navBtnFull {
+  display: none;
+}
+
 .footerLeft {
   display: flex;
   align-items: center;
@@ -382,6 +386,10 @@
   .footerInner > button {
     flex: 1;
     margin-left: 0;
+  }
+
+  .footerInner > .navBtnFull {
+    display: block;
   }
 
   .practiceRow1 {

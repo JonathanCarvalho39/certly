@@ -23,9 +23,11 @@ export default function Explanation({ question, selectedIndices, quizLang }: Pro
       {question.options[quizLang].map((_, i) => {
         const letter = letters[i];
         const isCorrectOption = question.correct.includes(i);
+        const explLang = question.explanation[quizLang] || question.explanation.pt || { correct: {}, wrong: {} };
         const explanation =
-          question.explanation[quizLang].correct[letter] ||
-          question.explanation[quizLang].wrong[letter];
+          explLang.correct?.[letter] ||
+          explLang.wrong?.[letter] ||
+          '';
 
         return (
           <div

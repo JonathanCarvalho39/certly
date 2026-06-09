@@ -242,9 +242,11 @@ function TopicCard({ topic, t }: { topic: TopicAnalysis; t: Record<string, strin
         </span>
       </div>
       <div className={styles.tcMeta}>
-        <span className={`${styles.statusBadge} ${styles[sm.cssClass]}`}>
-          {t[`status_${topic.status}` as keyof typeof t]}
-        </span>
+        {topic.status !== 'low_sample_error' && (
+          <span className={`${styles.statusBadge} ${styles[sm.cssClass]}`}>
+            {t[`status_${topic.status}` as keyof typeof t]}
+          </span>
+        )}
         <span className={`${styles.confBadge} ${styles[cm.cssClass]}`}>
           {t[`conf_${topic.confidence}` as keyof typeof t]}
         </span>
@@ -267,7 +269,7 @@ function TopicRow({ topic, t }: { topic: TopicAnalysis; t: Record<string, string
         {t[`conf_${topic.confidence}` as keyof typeof t]}
       </span>
       <span className={`${styles.tdStatus} ${styles[sm.cssClass]}`}>
-        {t[`status_${topic.status}` as keyof typeof t]}
+        {topic.status !== 'low_sample_error' ? t[`status_${topic.status}` as keyof typeof t] : ''}
       </span>
     </div>
   );

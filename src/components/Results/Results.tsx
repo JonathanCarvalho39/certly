@@ -172,7 +172,6 @@ export default function Results() {
                 <span className={styles.thWrong}>{t.wrong}</span>
                 <span className={styles.thPct}>%</span>
                 <span className={styles.thError}>{t.errorRateLabel}</span>
-                <span className={styles.thConf}>{config.lang === 'pt' ? 'Confiança' : 'Confidence'}</span>
                 <span className={styles.thStatus}>*</span>
               </div>
               {stats.topics.map((topic) => (
@@ -283,9 +282,6 @@ function TopicRow({ topic, t }: { topic: TopicAnalysis; t: Record<string, string
       <span className={styles.tdWrong}>{topic.wrong}</span>
       <span className={styles.tdPct}>{topic.percentage}%</span>
       <span className={styles.tdError}>{topic.errorRate}%</span>
-      <span className={`${styles.tdConf} ${styles[CONFIDENCE_META[topic.confidence].cssClass]}`}>
-        {t[`conf_${topic.confidence}` as keyof typeof t]}
-      </span>
       <span className={styles.tdDot} style={{ background: sm.color }} title={t[`status_${topic.status}` as keyof typeof t]} />
     </div>
   );

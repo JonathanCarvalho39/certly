@@ -263,7 +263,7 @@
   padding: 0.6rem 0.75rem;
   background: var(--border);
   font-family: 'Space Mono', monospace;
-  font-size: 0.55rem;
+  font-size: 0.65rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -278,7 +278,7 @@
   border-bottom: 1px solid var(--border);
   align-items: center;
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: var(--text-dim);
 }
 
@@ -288,17 +288,17 @@
 
 .tdTopic {
   font-family: 'Space Mono', monospace;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   color: var(--text);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.tdCorrect { color: var(--green); }
-.tdWrong { color: var(--red); }
-.tdPct { font-family: 'Space Mono', monospace; font-size: 0.65rem; }
-.tdError { font-family: 'Space Mono', monospace; font-size: 0.65rem; }
+.tdCorrect { color: var(--green); font-family: 'Space Mono', monospace; font-size: 0.75rem; }
+.tdWrong { color: var(--red); font-family: 'Space Mono', monospace; font-size: 0.75rem; }
+.tdPct { font-family: 'Space Mono', monospace; font-size: 0.75rem; }
+.tdError { font-family: 'Space Mono', monospace; font-size: 0.75rem; }
 
 .tdConf,
 .tdStatus {

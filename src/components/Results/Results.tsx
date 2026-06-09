@@ -172,7 +172,7 @@ export default function Results() {
                 <span className={styles.thWrong}>{t.wrong}</span>
                 <span className={styles.thPct}>%</span>
                 <span className={styles.thError}>{t.errorRateLabel}</span>
-                <span className={styles.thStatus}>*</span>
+                <span className={styles.thStatus}>{config.lang === 'pt' ? 'Status' : 'Status'}</span>
               </div>
               {stats.topics.map((topic) => (
                 <TopicRow key={topic.group} topic={topic} t={t} />

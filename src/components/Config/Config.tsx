@@ -12,6 +12,7 @@ export default function Config() {
   const t = UI[config.lang];
   const isExam = config.mode === 'exam';
   const [showInfoModal, setShowInfoModal] = useState(false);
+  const [showGroupPicker, setShowGroupPicker] = useState(false);
 
   const groups = useMemo(() => {
     const map = new Map<string, number>();
@@ -20,6 +21,11 @@ export default function Config() {
     }
     return Array.from(map.entries()).sort((a, b) => b[1] - a[1]);
   }, [state.allQuestions]);
+
+  const availableGroups = useMemo(
+    () => groups.filter(([group]) => !config.selectedGroups.includes(group)),
+    [groups, config.selectedGroups],
+  );
 
   const toggleGroup = (group: string) => {
     const current = config.selectedGroups;
@@ -109,22 +115,13 @@ export default function Config() {
               )}
             </div>
             <p className={styles.groupDesc}>{t.groupFilterDesc}</p>
-            <select
-              className={styles.groupSelect}
-              value=""
-              onChange={(e) => {
-                if (e.target.value) toggleGroup(e.target.value);
-              }}
+            <button
+              className={styles.groupSelectBtn}
+              onClick={() => setShowGroupPicker(true)}
             >
-              <option value="" disabled>{t.selectGroup}</option>
-              {groups
-                .filter(([group]) => !config.selectedGroups.includes(group))
-                .map(([group, count]) => (
-                  <option key={group} value={group}>
-                    {group} ({count})
-                  </option>
-                ))}
-            </select>
+              {availableGroups.length > 0 ? t.selectGroup : '—'}
+              <span className={styles.groupSelectArrow}>▾</span>
+            </button>
             {config.selectedGroups.length > 0 && (
               <div className={styles.tags}>
                 {config.selectedGroups.map((group) => {
@@ -147,6 +144,35 @@ export default function Config() {
       <button className={styles.startBtn} onClick={handleStartClick}>
         {isExam ? t.startExam : t.startPractice}
       </button>
+
+      {showGroupPicker && (
+        <div className={styles.overlay} onClick={() => setShowGroupPicker(false)}>
+          <div className={styles.pickerModal} onClick={(e) => e.stopPropagation()}>
+            <div className={styles.pickerHeader}>
+              <h3 className={styles.pickerTitle}>{t.groupFilter}</h3>
+              <button className={styles.closeBtn} onClick={() => setShowGroupPicker(false)}>✕</button>
+            </div>
+            <div className={styles.pickerList}>
+              {availableGroups.map(([group, count]) => (
+                <button
+                  key={group}
+                  className={styles.pickerItem}
+                  onClick={() => {
+                    toggleGroup(group);
+                    setShowGroupPicker(false);
+                  }}
+                >
+                  <span className={styles.pickerItemName}>{group}</span>
+                  <span className={styles.pickerItemCount}>{count}</span>
+                </button>
+              ))}
+              {availableGroups.length === 0 && (
+                <p className={styles.pickerEmpty}>{t.allGroups}</p>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
 
       {showInfoModal && (
         <div className={styles.overlay} onClick={() => setShowInfoModal(false)}>

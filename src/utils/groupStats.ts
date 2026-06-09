@@ -32,10 +32,11 @@ function getConfidence(answered: number): Confidence {
 function getStatus(
   total: number,
   wrong: number,
+  answered: number,
   percentage: number,
 ): TopicStatus {
+  if (percentage === 0 && answered > 0) return 'high_priority';
   if (wrong >= 3 && percentage < 70) return 'high_priority';
-  if (total < 3 && percentage === 0) return 'low_sample_error';
   if (total < 3 && percentage === 100) return 'good_start';
   if (total >= 3 && percentage >= 80) return 'likely_mastered';
   return 'neutral';
@@ -85,7 +86,7 @@ export function calculateGroupStats(
       const errorRate = answered > 0 ? Math.round((stats.wrong / answered) * 100) : 0;
       const impactScore = totalWrong > 0 ? stats.wrong / totalWrong : 0;
       const confidence = getConfidence(answered);
-      const status = getStatus(stats.total, stats.wrong, percentage);
+      const status = getStatus(stats.total, stats.wrong, answered, percentage);
 
       return {
         group,

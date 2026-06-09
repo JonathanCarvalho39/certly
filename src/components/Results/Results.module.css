@@ -258,7 +258,7 @@
 
 .tableHeader {
   display: grid;
-  grid-template-columns: 1.2fr 0.7fr 0.5fr 0.5fr 0.6fr 0.7fr 1fr;
+  grid-template-columns: 1.2fr 0.7fr 0.5fr 0.5fr 0.6fr 0.7fr 0.3fr;
   gap: 0.25rem;
   padding: 0.6rem 0.75rem;
   background: var(--border);
@@ -272,7 +272,7 @@
 
 .tableRow {
   display: grid;
-  grid-template-columns: 1.2fr 0.7fr 0.5fr 0.5fr 0.6fr 0.7fr 1fr;
+  grid-template-columns: 1.2fr 0.7fr 0.5fr 0.5fr 0.6fr 0.7fr 0.3fr;
   gap: 0.25rem;
   padding: 0.5rem 0.75rem;
   border-bottom: 1px solid var(--border);
@@ -308,6 +308,37 @@
   border-radius: var(--radius-sm);
   text-align: center;
   white-space: nowrap;
+}
+
+.tdDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  justify-self: center;
+}
+
+.tableLegend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6rem;
+  color: var(--text-dim);
+}
+
+.legendDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
 /* Bar Colors */
@@ -437,7 +468,7 @@
 
   .tableHeader,
   .tableRow {
-    grid-template-columns: 1fr 0.6fr 0.4fr 0.5fr 0.5fr 0.6fr 0.9fr;
+    grid-template-columns: 1fr 0.6fr 0.4fr 0.5fr 0.5fr 0.6fr 0.3fr;
     font-size: 0.5rem;
   }
 }

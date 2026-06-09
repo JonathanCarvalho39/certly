@@ -9,12 +9,12 @@ import ScoreRing from '../ui/ScoreRing';
 import LangToggle from '../ui/LangToggle';
 import styles from './Results.module.css';
 
-const STATUS_META: Record<TopicStatus, { cssClass: string }> = {
-  high_priority: { cssClass: 'statusHigh' },
-  low_sample_error: { cssClass: 'statusLowSample' },
-  good_start: { cssClass: 'statusGoodStart' },
-  likely_mastered: { cssClass: 'statusMastered' },
-  neutral: { cssClass: 'statusNeutral' },
+const STATUS_META: Record<TopicStatus, { cssClass: string; color: string }> = {
+  high_priority: { cssClass: 'statusHigh', color: 'var(--red)' },
+  low_sample_error: { cssClass: 'statusLowSample', color: 'var(--amber)' },
+  good_start: { cssClass: 'statusGoodStart', color: 'var(--green)' },
+  likely_mastered: { cssClass: 'statusMastered', color: 'var(--green)' },
+  neutral: { cssClass: 'statusNeutral', color: 'var(--text-dim)' },
 };
 
 const CONFIDENCE_META: Record<Confidence, { cssClass: string }> = {
@@ -173,11 +173,33 @@ export default function Results() {
                 <span className={styles.thPct}>%</span>
                 <span className={styles.thError}>{t.errorRateLabel}</span>
                 <span className={styles.thConf}>{config.lang === 'pt' ? 'Confiança' : 'Confidence'}</span>
-                <span className={styles.thStatus}>{config.lang === 'pt' ? 'Status' : 'Status'}</span>
+                <span className={styles.thStatus}>*</span>
               </div>
               {stats.topics.map((topic) => (
                 <TopicRow key={topic.group} topic={topic} t={t} />
               ))}
+            </div>
+            <div className={styles.tableLegend}>
+              <span className={styles.legendItem}>
+                <span className={styles.legendDot} style={{ background: 'var(--red)' }} />
+                {t.status_high_priority}
+              </span>
+              <span className={styles.legendItem}>
+                <span className={styles.legendDot} style={{ background: 'var(--amber)' }} />
+                {t.status_low_sample_error}
+              </span>
+              <span className={styles.legendItem}>
+                <span className={styles.legendDot} style={{ background: 'var(--green)' }} />
+                {t.status_good_start}
+              </span>
+              <span className={styles.legendItem}>
+                <span className={styles.legendDot} style={{ background: 'var(--green)' }} />
+                {t.status_likely_mastered}
+              </span>
+              <span className={styles.legendItem}>
+                <span className={styles.legendDot} style={{ background: 'var(--text-dim)' }} />
+                {t.status_neutral}
+              </span>
             </div>
           </div>
         )}
@@ -268,11 +290,7 @@ function TopicRow({ topic, t }: { topic: TopicAnalysis; t: Record<string, string
       <span className={`${styles.tdConf} ${styles[CONFIDENCE_META[topic.confidence].cssClass]}`}>
         {t[`conf_${topic.confidence}` as keyof typeof t]}
       </span>
-      {topic.status !== 'low_sample_error' && (
-        <span className={`${styles.tdStatus} ${styles[sm.cssClass]}`}>
-          {t[`status_${topic.status}` as keyof typeof t]}
-        </span>
-      )}
+      <span className={styles.tdDot} style={{ background: sm.color }} title={t[`status_${topic.status}` as keyof typeof t]} />
     </div>
   );
 }

@@ -8,6 +8,20 @@ interface Props {
   quizLang: Lang;
 }
 
+function renderWithLinks(text: string) {
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+  const parts = text.split(urlRegex);
+  return parts.map((part, i) =>
+    urlRegex.test(part) ? (
+      <a key={i} href={part} target="_blank" rel="noopener noreferrer" className={styles.docLink}>
+        Docs
+      </a>
+    ) : (
+      part
+    )
+  );
+}
+
 export default function Explanation({ question, selectedIndices, quizLang }: Props) {
   const t = UI[quizLang];
   const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
@@ -35,7 +49,7 @@ export default function Explanation({ question, selectedIndices, quizLang }: Pro
             className={`${styles.explanationBlock} ${isCorrectOption ? styles.correctBg : styles.wrongBg}`}
           >
             <span className={styles.explLetter}>{letter}</span>
-            <p className={styles.explText}>{explanation}</p>
+            <p className={styles.explText}>{renderWithLinks(explanation)}</p>
           </div>
         );
       })}

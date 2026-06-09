@@ -69,3 +69,21 @@
   line-height: 1.55;
   color: var(--text-dim);
 }
+
+.docLink {
+  font-size: 0.72rem;
+  font-family: 'Space Mono', monospace;
+  color: var(--blue);
+  text-decoration: none;
+  border: 1px solid var(--blue);
+  border-radius: 3px;
+  padding: 1px 5px;
+  margin-left: 4px;
+  opacity: 0.7;
+  vertical-align: middle;
+}
+
+.docLink:hover {
+  opacity: 1;
+  background: var(--blue-dim);
+}

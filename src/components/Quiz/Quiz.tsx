@@ -1,4 +1,5 @@
 import { useEffect, useCallback, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useApp } from '../../context/AppContext';
 import { UI } from '../../i18n/ui';
 import QuestionCard from './QuestionCard';
@@ -15,13 +16,15 @@ const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
 
 export default function Quiz() {
   const { state, dispatch } = useApp();
+  const navigate = useNavigate();
   const { config, questions, currentIndex, answers, quizLang } = state;
   const t = UI[config.lang];
   const isExam = config.mode === 'exam';
 
   const finishQuiz = useCallback(() => {
     dispatch({ type: 'FINISH' });
-  }, [dispatch]);
+    navigate('/results');
+  }, [dispatch, navigate]);
 
   const timer = useTimer(config.timeLimit, finishQuiz);
   const [showExitModal, setShowExitModal] = useState(false);
@@ -75,7 +78,7 @@ export default function Quiz() {
 
   const confirmExit = () => {
     timer.stop();
-    dispatch({ type: 'GO_TO', payload: 'welcome' });
+    navigate('/');
   };
 
   const getOptionState = (optIndex: number): 'default' | 'selected' | 'correct' | 'wrong' => {

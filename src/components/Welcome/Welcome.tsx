@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useApp } from '../../context/AppContext';
 import { UI } from '../../i18n/ui';
 import { certifications } from '../../data/loader';
@@ -7,6 +8,7 @@ import styles from './Welcome.module.css';
 
 export default function Welcome() {
   const { state, dispatch } = useApp();
+  const navigate = useNavigate();
   const t = UI[state.config.lang];
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -28,8 +30,8 @@ export default function Welcome() {
   };
 
   const setMode = (mode: 'exam' | 'practice') => {
-    dispatch({ type: 'SET_CONFIG', payload: { mode } });
-    dispatch({ type: 'GO_TO', payload: 'config' });
+    dispatch({ type: 'SET_CONFIG', payload: { mode, questionCount: 20 } });
+    navigate('/config');
   };
 
   return (

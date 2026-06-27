@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { useApp } from './context/AppContext';
 import { certifications } from './data/loader';
 import Welcome from './components/Welcome/Welcome';
@@ -17,11 +18,12 @@ export default function App() {
   }, [state.config.certificationId, dispatch]);
 
   return (
-    <>
-      {state.screen === 'welcome' && <Welcome />}
-      {state.screen === 'config' && <Config />}
-      {state.screen === 'quiz' && <Quiz />}
-      {state.screen === 'results' && <Results />}
-    </>
+    <Routes>
+      <Route path="/" element={<Welcome />} />
+      <Route path="/config" element={<Config />} />
+      <Route path="/quiz" element={<Quiz />} />
+      <Route path="/results" element={<Results />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
   );
 }

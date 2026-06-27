@@ -1,15 +1,17 @@
-import { createContext, useContext, useReducer } from 'react';
+import { createContext, useContext, useReducer, useEffect } from 'react';
 import type { ReactNode } from 'react';
 import type { AppState, AppAction, SessionConfig } from '../types';
 import { shuffle } from '../utils/shuffle';
 import { certifications } from '../data/loader';
+
+const STORAGE_KEY = 'certly-state';
 
 const defaultCertification = certifications.find((c) => c.id === 'dva')!;
 
 const defaultConfig: SessionConfig = {
   mode: 'exam',
   lang: 'pt',
-  questionCount: defaultCertification.questionCount,
+  questionCount: 20,
   timeLimit: defaultCertification.timeLimit,
   showTimer: true,
   selectedGroups: [],
@@ -25,6 +27,21 @@ const initialState: AppState = {
   answers: {},
   quizLang: 'pt',
 };
+
+function loadState(): AppState {
+  try {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (stored) {
+      const parsed = JSON.parse(stored);
+      if (parsed && parsed.config && parsed.screen) {
+        return { ...initialState, ...parsed };
+      }
+    }
+  } catch {
+    // ignore
+  }
+  return initialState;
+}
 
 function appReducer(state: AppState, action: AppAction): AppState {
   switch (action.type) {
@@ -139,7 +156,16 @@ interface AppContextValue {
 const AppContext = createContext<AppContextValue | null>(null);
 
 export function AppProvider({ children }: { children: ReactNode }) {
-  const [state, dispatch] = useReducer(appReducer, initialState);
+  const [state, dispatch] = useReducer(appReducer, undefined, loadState);
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    } catch {
+      // ignore
+    }
+  }, [state]);
+
   return (
     <AppContext.Provider value={{ state, dispatch }}>
       {children}

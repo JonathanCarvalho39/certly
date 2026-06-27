@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useApp } from '../../context/AppContext';
 import { UI } from '../../i18n/ui';
 import HeaderToggles from '../ui/HeaderToggles';
@@ -8,6 +9,7 @@ const PRACTICE_COUNTS = [10, 20, 30, 40, 50];
 
 export default function Config() {
   const { state, dispatch } = useApp();
+  const navigate = useNavigate();
   const { config } = state;
   const t = UI[config.lang];
   const isExam = config.mode === 'exam';
@@ -41,6 +43,7 @@ export default function Config() {
 
   const start = () => {
     dispatch({ type: 'START_QUIZ' });
+    navigate('/quiz');
   };
 
   const handleStartClick = () => {
@@ -54,7 +57,7 @@ export default function Config() {
   return (
     <div className={styles.container}>
       <div className={styles.topBar}>
-        <button className={styles.back} onClick={() => dispatch({ type: 'GO_TO', payload: 'welcome' })}>
+        <button className={styles.back} onClick={() => navigate('/')}>
           ← {t.back}
         </button>
         <HeaderToggles />

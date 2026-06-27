@@ -1,4 +1,5 @@
 import { useMemo, useRef, useCallback, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { toPng } from 'html-to-image';
 import { useApp } from '../../context/AppContext';
 import { UI } from '../../i18n/ui';
@@ -25,6 +26,7 @@ const CONFIDENCE_META: Record<Confidence, { cssClass: string }> = {
 
 export default function Results() {
   const { state, dispatch } = useApp();
+  const navigate = useNavigate();
   const { config, questions, answers } = state;
   const t = UI[config.lang];
   const exportRef = useRef<HTMLDivElement>(null);
@@ -98,7 +100,7 @@ export default function Results() {
     dispatch({ type: 'START_QUIZ' });
   };
 
-  const goHome = () => dispatch({ type: 'GO_TO', payload: 'welcome' });
+  const goHome = () => navigate('/');
 
   return (
     <div className={styles.container}>

@@ -105,6 +105,10 @@ export const UI = {
     impactLabel: 'Impact',
     errorRateLabel: 'Error Rate',
     wrongCount: '{n} errors',
+    selectCertification: 'Select a certification',
+    questions: 'questions',
+    minutes: 'min',
+    passingScore: 'Passing',
   },
   pt: {
     examMode: 'Modo Exame',
@@ -212,5 +216,9 @@ export const UI = {
     impactLabel: 'Impacto',
     errorRateLabel: 'Taxa de Erro',
     wrongCount: '{n} erros',
+    selectCertification: 'Selecione uma certificação',
+    questions: 'questões',
+    minutes: 'min',
+    passingScore: 'Aprovação',
   },
 } as const;

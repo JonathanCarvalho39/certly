@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "id": "saa",
+    "code": "SAA-C03",
+    "name": "Solutions Architect – Associate",
+    "nameShort": "Solutions Architect",
+    "questionCount": 65,
+    "timeLimit": 7800,
+    "passingScore": 72,
+    "color": "#232F3E",
+    "icon": "🏗️",
+    "description": {
+      "en": "Design resilient, high-performing, secure, and cost-optimized architectures.",
+      "pt": "Projetar arquiteturas resilientes, de alto desempenho, seguras e otimizadas."
+    }
+  },
+  "questions": [
+    {
+      "id": "SAA-C03-001",
+      "question": {
+        "en": "Sample question — replace with real content",
+        "pt": "Exemplo de questão — substitua por conteúdo real"
+      },
+      "options": {
+        "en": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "pt": [
+          "Alternativa A",
+          "Alternativa B",
+          "Alternativa C",
+          "Alternativa D"
+        ]
+      },
+      "correct": [
+        0
+      ],
+      "multi": false,
+      "explanation": {
+        "en": {
+          "correct": {
+            "A": "Correct explanation."
+          },
+          "wrong": {
+            "B": "Wrong.",
+            "C": "Wrong.",
+            "D": "Wrong."
+          }
+        },
+        "pt": {
+          "correct": {
+            "A": "Explicação correta."
+          },
+          "wrong": {
+            "B": "Incorreta.",
+            "C": "Incorreta.",
+            "D": "Incorreta."
+          }
+        }
+      },
+      "group": "General"
+    }
+  ]
+}

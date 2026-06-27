@@ -11,7 +11,7 @@ A bilingual (EN/PT) exam simulator for the **AWS Certified Developer Associate (
 - Bilingual toggle (EN/PT) per question
 - Animated score ring with pass/fail banner
 - Mobile-first responsive design
-- Zero runtime API calls — everything from `questions.json`
+- Zero runtime API calls — everything from `questions-developer.json`
 
 ## Setup Local
 
@@ -24,7 +24,7 @@ npm run dev
 
 ## Adding Questions
 
-Place your `questions.json` file in the `public/` folder. Each question must follow the schema:
+Place your `questions-developer.json` file in the `public/` folder. Each question must follow the schema:
 
 ```json
 {

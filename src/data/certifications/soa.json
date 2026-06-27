@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "id": "soa",
+    "code": "SOA-C02",
+    "name": "CloudOps Engineer – Associate",
+    "nameShort": "CloudOps Engineer",
+    "questionCount": 65,
+    "timeLimit": 7800,
+    "passingScore": 72,
+    "color": "#DD344C",
+    "icon": "⚙️",
+    "description": {
+      "en": "Deploy, manage, and operate scalable systems on AWS.",
+      "pt": "Implantar, gerenciar e operar sistemas escaláveis na AWS."
+    }
+  },
+  "questions": [
+    {
+      "id": "SOA-C02-001",
+      "question": {
+        "en": "Sample question — replace with real content",
+        "pt": "Exemplo de questão — substitua por conteúdo real"
+      },
+      "options": {
+        "en": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "pt": [
+          "Alternativa A",
+          "Alternativa B",
+          "Alternativa C",
+          "Alternativa D"
+        ]
+      },
+      "correct": [
+        0
+      ],
+      "multi": false,
+      "explanation": {
+        "en": {
+          "correct": {
+            "A": "Correct explanation."
+          },
+          "wrong": {
+            "B": "Wrong.",
+            "C": "Wrong.",
+            "D": "Wrong."
+          }
+        },
+        "pt": {
+          "correct": {
+            "A": "Explicação correta."
+          },
+          "wrong": {
+            "B": "Incorreta.",
+            "C": "Incorreta.",
+            "D": "Incorreta."
+          }
+        }
+      },
+      "group": "General"
+    }
+  ]
+}

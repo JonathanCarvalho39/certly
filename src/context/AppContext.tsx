@@ -2,14 +2,18 @@ import { createContext, useContext, useReducer } from 'react';
 import type { ReactNode } from 'react';
 import type { AppState, AppAction, SessionConfig } from '../types';
 import { shuffle } from '../utils/shuffle';
+import { certifications } from '../data/loader';
+
+const defaultCertification = certifications.find((c) => c.id === 'dva')!;
 
 const defaultConfig: SessionConfig = {
   mode: 'exam',
   lang: 'pt',
-  questionCount: 65,
-  timeLimit: 7800,
+  questionCount: defaultCertification.questionCount,
+  timeLimit: defaultCertification.timeLimit,
   showTimer: true,
   selectedGroups: [],
+  certificationId: defaultCertification.id,
 };
 
 const initialState: AppState = {

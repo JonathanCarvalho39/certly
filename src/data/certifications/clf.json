@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "id": "clf",
+    "code": "CLF-C02",
+    "name": "Cloud Practitioner",
+    "nameShort": "Cloud Practitioner",
+    "questionCount": 65,
+    "timeLimit": 5400,
+    "passingScore": 70,
+    "color": "#FF9900",
+    "icon": "☁️",
+    "description": {
+      "en": "Foundational understanding of AWS Cloud, services, and terminology.",
+      "pt": "Compreensão fundamental da nuvem AWS, serviços e terminologia."
+    }
+  },
+  "questions": [
+    {
+      "id": "CLF-C02-001",
+      "question": {
+        "en": "Sample question — replace with real content",
+        "pt": "Exemplo de questão — substitua por conteúdo real"
+      },
+      "options": {
+        "en": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "pt": [
+          "Alternativa A",
+          "Alternativa B",
+          "Alternativa C",
+          "Alternativa D"
+        ]
+      },
+      "correct": [
+        0
+      ],
+      "multi": false,
+      "explanation": {
+        "en": {
+          "correct": {
+            "A": "Correct explanation."
+          },
+          "wrong": {
+            "B": "Wrong.",
+            "C": "Wrong.",
+            "D": "Wrong."
+          }
+        },
+        "pt": {
+          "correct": {
+            "A": "Explicação correta."
+          },
+          "wrong": {
+            "B": "Incorreta.",
+            "C": "Incorreta.",
+            "D": "Incorreta."
+          }
+        }
+      },
+      "group": "General"
+    }
+  ]
+}

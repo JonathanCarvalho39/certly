@@ -227,14 +227,14 @@
 }
 
 /* Status colors */
-.statusHigh { background: rgba(239, 68, 68, 0.15); color: var(--red); border: 1px solid rgba(239, 68, 68, 0.3); }
-.statusLowSample { background: rgba(245, 158, 11, 0.15); color: var(--amber); border: 1px solid rgba(245, 158, 11, 0.3); }
-.statusGoodStart { background: rgba(16, 185, 129, 0.1); color: var(--green); border: 1px solid rgba(16, 185, 129, 0.2); }
-.statusMastered { background: rgba(16, 185, 129, 0.15); color: var(--green); border: 1px solid rgba(16, 185, 129, 0.3); }
+.statusHigh { background: var(--red-dim); color: var(--red); border: 1px solid var(--red); }
+.statusLowSample { background: var(--amber-dim); color: var(--amber); border: 1px solid var(--amber); }
+.statusGoodStart { background: var(--green-dim); color: var(--green); border: 1px solid var(--green); }
+.statusMastered { background: var(--green-dim); color: var(--green); border: 1px solid var(--green); }
 .statusNeutral { background: var(--surface); color: var(--text-dim); border: 1px solid var(--border); }
 
-.confHigh { background: rgba(16, 185, 129, 0.08); color: var(--green); border: 1px solid rgba(16, 185, 129, 0.15); }
-.confMed { background: rgba(245, 158, 11, 0.08); color: var(--amber); border: 1px solid rgba(245, 158, 11, 0.15); }
+.confHigh { background: var(--green-dim); color: var(--green); border: 1px solid var(--green); }
+.confMed { background: var(--amber-dim); color: var(--amber); border: 1px solid var(--amber); }
 .confLow { background: var(--surface); color: var(--text-dim); border: 1px solid var(--border); }
 
 /* All Topics Table */

@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "id": "aif",
+    "code": "AIF-C01",
+    "name": "AI Practitioner",
+    "nameShort": "AI Practitioner",
+    "questionCount": 65,
+    "timeLimit": 7800,
+    "passingScore": 70,
+    "color": "#8C4FFF",
+    "icon": "🤖",
+    "description": {
+      "en": "Foundational knowledge of AI/ML and AWS AI services.",
+      "pt": "Conhecimento fundamental de IA/ML e serviços de IA da AWS."
+    }
+  },
+  "questions": [
+    {
+      "id": "AIF-C01-001",
+      "question": {
+        "en": "Sample question — replace with real content",
+        "pt": "Exemplo de questão — substitua por conteúdo real"
+      },
+      "options": {
+        "en": [
+          "Option A",
+          "Option B",
+          "Option C",
+          "Option D"
+        ],
+        "pt": [
+          "Alternativa A",
+          "Alternativa B",
+          "Alternativa C",
+          "Alternativa D"
+        ]
+      },
+      "correct": [
+        0
+      ],
+      "multi": false,
+      "explanation": {
+        "en": {
+          "correct": {
+            "A": "Correct explanation."
+          },
+          "wrong": {
+            "B": "Wrong.",
+            "C": "Wrong.",
+            "D": "Wrong."
+          }
+        },
+        "pt": {
+          "correct": {
+            "A": "Explicação correta."
+          },
+          "wrong": {
+            "B": "Incorreta.",
+            "C": "Incorreta.",
+            "D": "Incorreta."
+          }
+        }
+      },
+      "group": "General"
+    }
+  ]
+}

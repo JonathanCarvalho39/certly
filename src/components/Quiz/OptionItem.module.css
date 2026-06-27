@@ -18,8 +18,8 @@
 }
 
 .option:hover:not(:disabled) {
-  border-color: rgba(245, 158, 11, 0.4);
-  background: rgba(245, 158, 11, 0.04);
+  border-color: var(--amber);
+  background: var(--amber-dim);
   color: var(--text);
 }
 

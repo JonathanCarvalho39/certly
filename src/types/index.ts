@@ -42,6 +42,7 @@ export interface SessionConfig {
   timeLimit: number;
   showTimer: boolean;
   selectedGroups: string[];
+  certificationId: string | null;
 }
 
 export interface AppState {

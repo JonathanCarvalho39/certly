@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { useApp } from '../../context/AppContext';
 import { UI } from '../../i18n/ui';
-import LangToggle from '../ui/LangToggle';
+import HeaderToggles from '../ui/HeaderToggles';
 import styles from './Config.module.css';
 
 const PRACTICE_COUNTS = [10, 20, 30, 40, 50];
@@ -57,7 +57,7 @@ export default function Config() {
         <button className={styles.back} onClick={() => dispatch({ type: 'GO_TO', payload: 'welcome' })}>
           ← {t.back}
         </button>
-        <LangToggle />
+        <HeaderToggles />
       </div>
 
       <h1 className={styles.title}>{isExam ? t.configExam : t.configPractice}</h1>

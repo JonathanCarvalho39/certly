@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { useApp } from './context/AppContext';
 import { certifications } from './data/loader';
-import ThemeToggle from './components/ui/ThemeToggle';
 import Welcome from './components/Welcome/Welcome';
 import Config from './components/Config/Config';
 import Quiz from './components/Quiz/Quiz';
@@ -23,7 +22,6 @@ export default function App() {
       {state.screen === 'config' && <Config />}
       {state.screen === 'quiz' && <Quiz />}
       {state.screen === 'results' && <Results />}
-      <ThemeToggle />
     </>
   );
 }

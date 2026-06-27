@@ -7,7 +7,7 @@ import Explanation from './Explanation';
 import ExamNav from './ExamNav';
 import Timer from './Timer';
 import ProgressBar from '../ui/ProgressBar';
-import LangToggle from '../ui/LangToggle';
+import HeaderToggles from '../ui/HeaderToggles';
 import { useTimer } from '../../hooks/useTimer';
 import styles from './Quiz.module.css';
 
@@ -127,7 +127,7 @@ export default function Quiz() {
           </>
         )}
         <div className={styles.langToggle}>
-          <LangToggle />
+          <HeaderToggles />
         </div>
         <div className={styles.progressWrap}>
           <ProgressBar current={currentIndex + 1} total={questions.length} />

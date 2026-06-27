@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useApp } from '../../context/AppContext';
 import { UI } from '../../i18n/ui';
 import { certifications } from '../../data/loader';
+import HeaderToggles from '../ui/HeaderToggles';
 import styles from './Welcome.module.css';
 
 export default function Welcome() {
@@ -34,18 +35,7 @@ export default function Welcome() {
   return (
     <div className={styles.container}>
       <div className={styles.langToggle}>
-        <button
-          className={`${styles.langBtn} ${state.config.lang === 'en' ? styles.active : ''}`}
-          onClick={() => { dispatch({ type: 'SET_CONFIG', payload: { lang: 'en' } }); dispatch({ type: 'SET_QUIZ_LANG', payload: 'en' }); }}
-        >
-          EN
-        </button>
-        <button
-          className={`${styles.langBtn} ${state.config.lang === 'pt' ? styles.active : ''}`}
-          onClick={() => { dispatch({ type: 'SET_CONFIG', payload: { lang: 'pt' } }); dispatch({ type: 'SET_QUIZ_LANG', payload: 'pt' }); }}
-        >
-          PT
-        </button>
+        <HeaderToggles />
       </div>
 
       <div className={styles.header}>

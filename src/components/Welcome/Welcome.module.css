@@ -12,28 +12,7 @@
   position: fixed;
   top: 1.5rem;
   right: 1.5rem;
-  display: flex;
-  gap: 0;
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  border: 1px solid var(--border);
   z-index: 110;
-}
-
-.langBtn {
-  padding: 0.4rem 0.8rem;
-  font-family: 'Space Mono', monospace;
-  font-size: 0.75rem;
-  background: var(--surface);
-  color: var(--text-dim);
-  border: none;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.langBtn.active {
-  background: var(--amber);
-  color: #000;
 }
 
 .header {

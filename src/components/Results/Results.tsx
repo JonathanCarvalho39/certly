@@ -6,7 +6,7 @@ import { calculateScore } from '../../utils/score';
 import { calculateGroupStats } from '../../utils/groupStats';
 import type { TopicAnalysis, TopicStatus, Confidence } from '../../utils/groupStats';
 import ScoreRing from '../ui/ScoreRing';
-import LangToggle from '../ui/LangToggle';
+import HeaderToggles from '../ui/HeaderToggles';
 import styles from './Results.module.css';
 
 const STATUS_META: Record<TopicStatus, { cssClass: string; color: string }> = {
@@ -104,7 +104,7 @@ export default function Results() {
     <div className={styles.container}>
       <div className={styles.topBar}>
         <div />
-        <LangToggle />
+        <HeaderToggles />
       </div>
 
       <div ref={exportRef} className={styles.exportArea}>
